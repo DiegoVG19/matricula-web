@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="sidiWeb.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIDI WEB - UNJFSC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="Resources/indexStyles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!-- Las páginas de contenido pueden agregar elementos específicos al head aquí -->
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg top-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO-IDI-2024-1-Nk57IjbCFsPu1lzetqAZkYHloeG1mi.png" alt="IDI Logo" class="institute-logo" />
+                    <span class="fw-bold">Idiomas UNJFSC</span>
+                </a>
+                <div class="ms-auto">
+                    <div class="dropdown">
+                        <button class="btn text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <!--<li><a class="dropdown-item" href="#"><i class="fas fa-user-edit me-2"></i>Cambiar Perfil</a></li>-->
+                            <!--<li><a class="dropdown-item" href="#"><i class="fas fa-key me-2"></i>Cambiar contraseña</a></li>-->
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <asp:LinkButton ID="btnCerrarSesion" runat="server" CssClass="dropdown-item text-danger" OnClick="btnCerrarSesion_Click">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
+                                </asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 col-lg-2 sidebar">
+                    <div class="nav flex-column">
+                        <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
+                            <i class="fas fa-user"></i> Perfil
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
+                            <i class="fas fa-star"></i> Grupos
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
+                            <i class="fas fa-dollar-sign"></i> Pagos realizados
+                        </asp:LinkButton>
+                        <!--<a href="#" class="nav-link">
+                            <i class="fas fa-file-alt"></i>Ficha de matrícula
+                        </a>-->
+                        <hr />
+                        <div class="text-muted ps-3">Guía al usuario</div>
+                        <a href="https://bit.ly/3xYwapm" target="_blank" class="nav-link">
+                            <i class="fas fa-book"></i>Reglamento académico
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <div class="mb-2 fw-bold">Encuéntranos en:</div>
+                        <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.link/g3gox5" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.link/zfdbfh" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9 col-lg-10 content-wrapper">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        <!-- El contenido específico de cada página irá aquí -->
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#sidebarToggle').click(function () {
+                    $('.sidebar').toggleClass('active');
+                });
+
+                $(document).click(function (event) {
+                    var sidebar = $('.sidebar');
+                    var sidebarToggle = $('#sidebarToggle');
+                    if (!sidebar.is(event.target) && sidebar.has(event.target).length === 0 &&
+                        !sidebarToggle.is(event.target) && sidebarToggle.has(event.target).length === 0) {
+                        sidebar.removeClass('active');
+                    }
+                });
+            });
+        </script>
+        <asp:ContentPlaceHolder ID="Scripts" runat="server">
+            <!-- Scripts específicos de cada página irán aquí -->
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

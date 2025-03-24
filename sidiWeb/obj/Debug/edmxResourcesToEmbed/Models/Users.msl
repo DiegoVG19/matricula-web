@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbSidiModelStoreContainer" CdmEntityContainer="dbSidiEntities">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="dbSidiModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="idtrabajador" ColumnName="idtrabajador" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="buscarUsuario" FunctionName="dbSidiModel.Store.buscarUsuario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.buscarUsuario_Result">
+          <ScalarProperty Name="idpersona" ColumnName="idpersona" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apaterno" ColumnName="apaterno" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="amaterno" ColumnName="amaterno" />
+          <ScalarProperty Name="idubigeo" ColumnName="idubigeo" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="gradoInstruccion" ColumnName="gradoInstruccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="correoElectronico" ColumnName="correoElectronico" />
+          <ScalarProperty Name="fechanacimiento" ColumnName="fechanacimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="detalle_alumno_por_id" FunctionName="dbSidiModel.Store.detalle_alumno_por_id">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.detalle_alumno_por_id_Result">
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="gradoInstruccion" ColumnName="gradoInstruccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="correoElectronico" ColumnName="correoElectronico" />
+          <ScalarProperty Name="fechanacimiento" ColumnName="fechanacimiento" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="numerocarnet" ColumnName="numerocarnet" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="listar_grupos_alumno" FunctionName="dbSidiModel.Store.listar_grupos_alumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.listar_grupos_alumno_Result">
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="nombreNivel" ColumnName="nombreNivel" />
+          <ScalarProperty Name="ciclo" ColumnName="ciclo" />
+          <ScalarProperty Name="nombreIdioma" ColumnName="nombreIdioma" />
+          <ScalarProperty Name="modalidad" ColumnName="modalidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="listar_idioma" FunctionName="dbSidiModel.Store.listar_idioma">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.listar_idioma_Result">
+          <ScalarProperty Name="idIdioma" ColumnName="idIdioma" />
+          <ScalarProperty Name="nombreIdioma" ColumnName="nombreIdioma" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="mostrar_relacion" FunctionName="dbSidiModel.Store.mostrar_relacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.mostrar_relacion_Result">
+          <ScalarProperty Name="idPago" ColumnName="idPago" />
+          <ScalarProperty Name="RAZON" ColumnName="RAZON" />
+          <ScalarProperty Name="NIVEL" ColumnName="NIVEL" />
+          <ScalarProperty Name="MONTO" ColumnName="MONTO" />
+          <ScalarProperty Name="FECH" ColumnName="FECH" />
+          <ScalarProperty Name="RECIBO" ColumnName="RECIBO" />
+          <ScalarProperty Name="horario" ColumnName="horario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="obtener_idalumno" FunctionName="dbSidiModel.Store.obtener_idalumno" />
+    <FunctionImportMapping FunctionImportName="relacion_matriculas" FunctionName="dbSidiModel.Store.relacion_matriculas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbSidiModel.relacion_matriculas_Result">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="idioma" ColumnName="idioma" />
+          <ScalarProperty Name="nivel" ColumnName="nivel" />
+          <ScalarProperty Name="ciclo" ColumnName="ciclo" />
+          <ScalarProperty Name="Horario" ColumnName="Horario" />
+          <ScalarProperty Name="modalidad" ColumnName="modalidad" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
