@@ -14,8 +14,24 @@ namespace sidiWeb
             // Verificar si el usuario está autenticado
             if (Session["UserId"] == null)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("/");
+                return;
             }
+        }
+
+        protected void btnEditarPerfil_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("perfil.aspx");
+        }
+
+        protected void btnCambiarContra_Click(object sender, EventArgs e)
+        {
+            //
+            /*Panel para cambio de contraseña
+             Verificacion de contraseña anterior
+            Dos veces
+            Nueva contra
+            Boton de acpetar*/
         }
 
         protected void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -30,7 +46,7 @@ namespace sidiWeb
             }
 
             // Redirigir a la página de inicio de sesión
-            Response.Redirect("Login.aspx");
+            Response.Redirect("/");
         }
 
         protected void btnVerPerfil_Click(object sender, EventArgs e)

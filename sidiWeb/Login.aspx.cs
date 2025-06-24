@@ -26,7 +26,7 @@ namespace sidiWeb
             string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
             using (SqlConnection sqlConnection = new SqlConnection(connect))
             {
-                SqlCommand cmd = new SqlCommand("sp_login", sqlConnection)
+                SqlCommand cmd = new SqlCommand("sp_login_all", sqlConnection)
                 {
                     CommandType = System.Data.CommandType.StoredProcedure
                 };
@@ -36,8 +36,26 @@ namespace sidiWeb
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    Session["UserId"] = dr["idAlumno"].ToString();
-                    Response.Redirect("index.aspx");
+                    switch(dr["tipo_usuario"].ToString())
+                    {
+                        case "ADMINISTRADOR":
+                        case "SECRETARIO":
+                        case "SECRETARIA PRINCIPAL":
+                            Session["UserId"] = dr["idtrabajador"].ToString();
+                            Response.Redirect("administrative/index.aspx");
+                            break;
+                         case "PROFESOR":
+                            Session["UserId"] = dr["idtrabajador"].ToString();
+                            Response.Redirect("instructor/teach.aspx");
+                            break;
+                        case "ESTUDIANTE":
+                            Session["UserId"] = dr["idAlumno"].ToString();
+                            Response.Redirect("student/index.aspx");
+                            break;
+                        default:
+                            lblError.Text = "Usuario no encontrado";
+                            break;
+                    }
                 }
                 else
                 {

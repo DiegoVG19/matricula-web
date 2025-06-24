@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeBehind="detallegrupo.aspx.cs" Inherits="sidiWeb.detallegrupo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteStudent.master" AutoEventWireup="true" CodeBehind="detallegrupo.aspx.cs" Inherits="sidiWeb.detallegrupo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -42,7 +42,7 @@
                 <asp:Label ID="lblDocente" runat="server"></asp:Label>
             </div>
             <div>
-                <asp:Button ID="btnMostrarAsistencias" runat="server" Text="Mostrar asistencias" CssClass="btn btn-primary" OnClick="btnMostrarAsistencias_Click" />
+                <asp:Button ID="btnMostrarAsistencias" runat="server" Text="Mostrar asistencias" CssClass="btn btn-success" OnClick="btnMostrarAsistencias_Click" />
                 <asp:Button ID="btnMostrarNotas" runat="server" Text="Mostrar notas" CssClass="btn btn-primary" OnClick="btnMostrarNotas_Click" />
             </div>
         </div>
@@ -103,7 +103,7 @@
                             </Columns>
                         </asp:GridView>
                         <asp:GridView ID="gvPromedios" runat="server" CssClass="table table-bordered table-striped"
-                            AutoGenerateColumns="False">
+                            AutoGenerateColumns="False" OnRowDataBound="gvPromedios_RowDataBound">
                             <Columns>
                                 <asp:BoundField DataField="tipoNota" HeaderText="TIPO" />
                                 <asp:BoundField DataField="nota" HeaderText="NOTA" />

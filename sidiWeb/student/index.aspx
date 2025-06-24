@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="sidiWeb.index1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteStudent.master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="sidiWeb.index1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -17,7 +17,7 @@
                 <div class="info-group">
                     <div class="info-label">N° CARNET</div>
                     <asp:Label ID="lblNCarnet" runat="server" class="info-value fw-bold">IXXXXXXXX</asp:Label>
-                    <div class="text-danger small">El numero de carnet es USUARIO y CONTRASEÑA para el aula virtual.</div>
+                    <div class="text-danger small fw-bold">El numero de carnet es USUARIO y CONTRASEÑA para el aula virtual.</div>
                 </div>
                 <div class="info-group">
                     <div class="info-label">Correo electrónico</div>

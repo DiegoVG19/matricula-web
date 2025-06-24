@@ -103,7 +103,7 @@
                             </Columns>
                         </asp:GridView>
                         <asp:GridView ID="gvPromedios" runat="server" CssClass="table table-bordered table-striped"
-                            AutoGenerateColumns="False">
+                            AutoGenerateColumns="False" OnRowDataBound="gvPromedios_RowDataBound">
                             <Columns>
                                 <asp:BoundField DataField="tipoNota" HeaderText="TIPO" />
                                 <asp:BoundField DataField="nota" HeaderText="NOTA" />

@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA49ELrq+960+TBy+HthWuyAAAAAACAAAAAAAQZgAAAAEAACAAAABnz92NQpTxQf0pe8eyy5sk7Q4kjvd1BerWcSJ4Sl7ItAAAAAAOgAAAAAIAACAAAAD3uHYgFl+mA+YSbmjvGlHdqzn98kuCPVI1kFT/GCO50CAAAAAEuYz9/BjkD051JQtjphaj25Tm70fGEYthTy3A4X5D4EAAAAARUfLgxQx7eruWvw8jWsaPjwjPeirM8540KAALp4H5Puu90+FdXELFeUmhzvHnSr6VGQw7to92Q84/8ZkVEIsv</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.28/www.idiunjfsc.somee.com</_PublishTargetUrl>
-    <History>True|2025-03-22T21:50:51.6358571Z||;</History>
+    <History>True|2025-06-04T01:42:45.7548735Z||;True|2025-06-02T20:53:56.0376613-05:00||;True|2025-05-19T21:29:32.8355070-05:00||;True|2025-05-07T21:34:13.8183580-05:00||;True|2025-05-07T21:24:46.2560354-05:00||;True|2025-05-07T21:09:04.6877780-05:00||;True|2025-05-07T20:40:28.1584792-05:00||;False|2025-05-07T20:31:37.1714324-05:00||;False|2025-05-07T20:25:34.7584114-05:00||;True|2025-05-07T17:52:44.2710181-05:00||;True|2025-05-07T16:47:48.6446117-05:00||;True|2025-04-28T19:47:21.8808197-05:00||;True|2025-04-03T19:16:31.9376886-05:00||;True|2025-04-03T19:07:21.3380257-05:00||;True|2025-04-03T18:52:57.5568130-05:00||;True|2025-03-24T22:19:27.0276215-05:00||;True|2025-03-24T21:47:40.0860369-05:00||;True|2025-03-24T21:29:39.9587063-05:00||;True|2025-03-24T21:04:48.3428908-05:00||;True|2025-03-24T20:47:05.6264767-05:00||;True|2025-03-24T20:27:08.1722528-05:00||;True|2025-03-22T16:50:51.6358571-05:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -18,10 +18,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>03/22/2025 16:43:52</publishTime>
+      <publishTime>06/03/2025 20:35:38</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>03/22/2025 16:43:52</publishTime>
+      <publishTime>06/03/2025 20:35:38</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -207,10 +207,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:18:16</publishTime>
     </File>
     <File Include="bin/sidiWeb.dll">
-      <publishTime>03/22/2025 16:43:41</publishTime>
+      <publishTime>06/03/2025 20:35:22</publishTime>
     </File>
     <File Include="bin/sidiWeb.pdb">
-      <publishTime>03/22/2025 16:43:41</publishTime>
+      <publishTime>06/03/2025 20:35:22</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>05/27/2022 23:41:54</publishTime>
@@ -336,31 +336,40 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 00:16:46</publishTime>
     </File>
     <File Include="detallegrupo.aspx">
-      <publishTime>03/22/2025 02:01:27</publishTime>
+      <publishTime>06/02/2025 20:37:11</publishTime>
+    </File>
+    <File Include="error404.aspx">
+      <publishTime>05/07/2025 20:23:06</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>02/20/2025 00:16:46</publishTime>
     </File>
     <File Include="grupos.aspx">
-      <publishTime>03/22/2025 00:45:29</publishTime>
+      <publishTime>04/16/2025 09:43:32</publishTime>
     </File>
     <File Include="index.aspx">
       <publishTime>03/22/2025 01:02:46</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>03/06/2025 01:55:04</publishTime>
+      <publishTime>05/19/2025 21:16:04</publishTime>
     </File>
     <File Include="pagos.aspx">
-      <publishTime>03/22/2025 00:42:49</publishTime>
+      <publishTime>03/24/2025 22:11:18</publishTime>
+    </File>
+    <File Include="perfil.aspx">
+      <publishTime>05/08/2025 19:26:22</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>03/22/2025 16:43:46</publishTime>
+      <publishTime>06/03/2025 20:35:28</publishTime>
+    </File>
+    <File Include="Resources/err.css">
+      <publishTime>05/07/2025 20:22:18</publishTime>
     </File>
     <File Include="Resources/indexStyles.css">
       <publishTime>03/06/2025 01:37:44</publishTime>
     </File>
     <File Include="Resources/loginStyles.css">
-      <publishTime>02/20/2025 11:13:57</publishTime>
+      <publishTime>05/09/2025 09:20:03</publishTime>
     </File>
     <File Include="Scripts/bootstrap.bundle.js">
       <publishTime>02/20/2025 00:16:53</publishTime>
@@ -432,7 +441,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 00:17:00</publishTime>
     </File>
     <File Include="Site.master">
-      <publishTime>03/22/2025 01:26:27</publishTime>
+      <publishTime>06/03/2025 20:34:00</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>02/20/2025 00:16:46</publishTime>
@@ -456,7 +465,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/20/2025 00:16:46</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/22/2025 16:24:48</publishTime>
+      <publishTime>05/07/2025 20:32:25</publishTime>
     </File>
   </ItemGroup>
 </Project>

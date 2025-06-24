@@ -19,8 +19,7 @@
             <!-- Logo Section -->
             <div class="col-md-6 logo-section d-flex align-items-center justify-content-center">
                 <div class="logo-container text-center">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO-IDI-2024-1-Nk57IjbCFsPu1lzetqAZkYHloeG1mi.png" alt="Instituto de Idiomas Logo" class="img-fluid mb-4" />
-                    <h1 class="institute-name">Instituto de Idiomas</h1>
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3j5r72CUtMe6fI8jCrL56vLwHyGuNC.png" alt="Instituto de Idiomas Logo" class="img-fluid mb-4" />
                 </div>
             </div>
 
@@ -30,7 +29,7 @@
                     <form id="form2" runat="server">
                         <div class="mb-4">
                             <label for="txtUsuario" class="form-label text-white fw-semibold">Usuario</label>
-                            <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="DNI"></asp:TextBox>
+                            <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="Usuario"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" 
                                 ControlToValidate="txtUsuario" 
                                 ErrorMessage="El usuario es requerido" 
@@ -49,12 +48,17 @@
                             </asp:RequiredFieldValidator>
                         </div>
                         <div>
-                            <asp:label ID="lblError" runat="server" class="form-label text-red fw-bold"></asp:label>
+                            <asp:label ID="lblError" runat="server" class="form-label text-danger fw-bold"></asp:label>
                         </div>
                         <br />
-                        <asp:Button ID="btnIngresar" runat="server" Text="Aceptar" 
+                        <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" 
                             CssClass="btn btn-login w-100" OnClick="btnIngresar_Click"/>
+                        <br />
                     </form>
+                    <br />
+                    <div>
+                        <a href="https://drive.google.com/file/d/1Ubm-q4tpJSd0_RzgGrJIGZKcgnWJGQiE/view?usp=sharing" target="_blank" class="nav-link text-white text-decoration-underline">Necesito ayuda</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,9 +72,12 @@
             }).blur(function () {
                 $(this).removeClass('focused');
             });
+            document.querySelectorAll('[style="position: fixed; z-index: 2147483647; left: 0px; bottom: 0px; height: 65px; right: 0px; display: block; width: 100%; background-color: transparent; margin: 0px; padding: 0px;"], [style="opacity: 0.9; z-index: 2147483647; position: fixed; left: 0px; bottom: 0px; height: 65px; right: 0px; display: block; width: 100%; background-color: #202020; margin: 0px; padding: 0px;"]').forEach(el => {
+                el.style.display = 'none';
+            });
         });
+        
     </script>
-
 </body>
 </html>
 

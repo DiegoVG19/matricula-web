@@ -14,15 +14,15 @@ namespace sidiWeb
         String dni, userId;
         protected void Page_Load(object sender, EventArgs e)
         {
-            userId = Session["UserId"].ToString();
-            if (userId != null)
+            if (Session["UserId"] == null)
             {
-                loadStudentData();
+                Response.Redirect("/");
+                return;
             }
             else
             {
-                Session.Clear();
-                Response.Redirect("Login.aspx");
+                userId = Session["UserId"].ToString();
+                loadStudentData();
             }
         }
 

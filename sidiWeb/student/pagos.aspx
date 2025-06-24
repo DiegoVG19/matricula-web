@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeBehind="pagos.aspx.cs" Inherits="sidiWeb.pagos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteStudent.master" AutoEventWireup="true" CodeBehind="pagos.aspx.cs" Inherits="sidiWeb.pagos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -17,7 +17,7 @@
                     <asp:BoundField DataField="Fech" HeaderText="FECHA" DataFormatString="{0:dd/MM/yyyy}" />
                     <asp:BoundField DataField="Razon" HeaderText="RAZON" />
                     <asp:BoundField DataField="Nivel" HeaderText="NIVEL" />
-                    <asp:BoundField DataField="Monto" HeaderText="MONTO" DataFormatString="{0:C2}" />
+                    <asp:BoundField DataField="Monto" HeaderText="MONTO" DataFormatString="S/ {0:N2}" />
                     <asp:BoundField DataField="Recibo" HeaderText="RECIBO" />
                 </Columns>
             </asp:GridView>
