@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "D:\\IDI\\SidiWeb\\sidiWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\idi\\sidiweb\\sidiweb\\sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\idi\\sidiweb\\sidiweb\\sidiweb\\administrative\\resumenalumnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\administrative\\resumenalumnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\idi\\sidiweb\\sidiweb\\sidiweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\idi\\sidiweb\\sidiweb\\sidiweb\\administrative\\resumenalumnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\administrative\\resumenalumnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\detallegrupo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\detallegrupo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\idi\\sidiweb\\sidiweb\\sidiweb\\siteadministrative.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\siteadministrative.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\detallegrupo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\detallegrupo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\siteadministrative.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\siteadministrative.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\grupos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\grupos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\grupos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\grupos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\IDI\\SidiWeb\\sidiWeb\\sidiweb\\administrative\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\administrative\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +30,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SiteAdministrative.master.cs",
+              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\SiteAdministrative.master.cs",
+              "RelativeDocumentMoniker": "sidiWeb\\SiteAdministrative.master.cs",
+              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\SiteAdministrative.master.cs",
+              "RelativeToolTip": "sidiWeb\\SiteAdministrative.master.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:01:34.538Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Web.config",
-              "RelativeDocumentMoniker": "sidiWeb\\Web.config",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Web.config",
-              "RelativeToolTip": "sidiWeb\\Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAnwBsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-22T21:21:39.051Z",
+              "Title": "resumenalumnos.aspx",
+              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\resumenalumnos.aspx",
+              "RelativeDocumentMoniker": "sidiWeb\\administrative\\resumenalumnos.aspx",
+              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\resumenalumnos.aspx",
+              "RelativeToolTip": "sidiWeb\\administrative\\resumenalumnos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-20T16:48:45.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Login.aspx",
-              "RelativeDocumentMoniker": "sidiWeb\\Login.aspx",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Login.aspx",
-              "RelativeToolTip": "sidiWeb\\Login.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-06T01:41:17.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "grupos.aspx",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\grupos.aspx",
-              "RelativeDocumentMoniker": "sidiWeb\\grupos.aspx",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\grupos.aspx",
-              "RelativeToolTip": "sidiWeb\\grupos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-22T06:42:25.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Site.master",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Site.master",
-              "RelativeDocumentMoniker": "sidiWeb\\Site.master",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\Site.master",
-              "RelativeToolTip": "sidiWeb\\Site.master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-22T06:05:05.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "detallegrupo.aspx",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\detallegrupo.aspx",
-              "RelativeDocumentMoniker": "sidiWeb\\detallegrupo.aspx",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\detallegrupo.aspx",
-              "RelativeToolTip": "sidiWeb\\detallegrupo.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-22T06:35:21.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "detallegrupo.aspx.cs",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\detallegrupo.aspx.cs",
-              "RelativeDocumentMoniker": "sidiWeb\\detallegrupo.aspx.cs",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\detallegrupo.aspx.cs",
-              "RelativeToolTip": "sidiWeb\\detallegrupo.aspx.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBMAAAAMAAAAAAAAAA==",
+              "Title": "resumenalumnos.aspx.cs",
+              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\resumenalumnos.aspx.cs",
+              "RelativeDocumentMoniker": "sidiWeb\\administrative\\resumenalumnos.aspx.cs",
+              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\resumenalumnos.aspx.cs",
+              "RelativeToolTip": "sidiWeb\\administrative\\resumenalumnos.aspx.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAcwE8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T06:44:21.929Z",
+              "WhenOpened": "2025-06-19T16:27:08.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "grupos.aspx.cs",
-              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\grupos.aspx.cs",
-              "RelativeDocumentMoniker": "sidiWeb\\grupos.aspx.cs",
-              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\grupos.aspx.cs",
-              "RelativeToolTip": "sidiWeb\\grupos.aspx.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwCwAAAAVAAAAAAAAAA==",
+              "Title": "index.aspx.cs",
+              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\index.aspx.cs",
+              "RelativeDocumentMoniker": "sidiWeb\\administrative\\index.aspx.cs",
+              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\administrative\\index.aspx.cs",
+              "RelativeToolTip": "sidiWeb\\administrative\\index.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB4AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T06:44:18.24Z",
+              "WhenOpened": "2025-06-19T15:08:43.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SiteAdministrative.master",
+              "DocumentMoniker": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\SiteAdministrative.master",
+              "RelativeDocumentMoniker": "sidiWeb\\SiteAdministrative.master",
+              "ToolTip": "D:\\IDI\\SidiWeb\\sidiWeb\\sidiWeb\\SiteAdministrative.master",
+              "RelativeToolTip": "sidiWeb\\SiteAdministrative.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-18T20:55:13.039Z",
               "EditorCaption": ""
             }
           ]
