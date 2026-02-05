@@ -68,5 +68,10 @@ namespace sidiWeb
             
             Response.Redirect("matricula.aspx");
         }
+        protected void btnSilabo_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("silabo.aspx");
+        }
     }
 }

@@ -57,11 +57,17 @@
                 <!-- Sidebar -->
                 <div class="col-md-3 col-lg-2 sidebar">
                     <div class="nav flex-column">
+                        
                         <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
                             <i class="fas fa-user"></i> Perfil
                         </asp:LinkButton>
+
                         <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
                             <i class="fas fa-star"></i> Grupos
+                        </asp:LinkButton>
+                        <!-- Silabo-->
+                       <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnSilabo_Click" class="nav-link">
+                            <i class="fas fa-file-download"></i> Descargar Sílabo
                         </asp:LinkButton>
                         <!--MatriculaVirtual-->
                     <asp:LinkButton ID="btnMatricula" runat="server" OnClick="btnMatricula_Click" class="nav-link">

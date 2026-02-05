@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|c:\\users\\chino\\source\\repos\\idi-network\\sidiweb\\sidiweb\\student\\silabo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\silabo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|c:\\users\\chino\\source\\repos\\idi-network\\sidiweb\\sidiweb\\student\\silabo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\silabo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\student\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|c:\\users\\chino\\source\\repos\\idi-network\\sidiweb\\sidiweb\\sitestudent.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\sitestudent.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\sitestudent.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiweb\\student\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +38,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "silabo.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\silabo.aspx.cs",
+              "RelativeDocumentMoniker": "sidiWeb\\student\\silabo.aspx.cs",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\silabo.aspx.cs",
+              "RelativeToolTip": "sidiWeb\\student\\silabo.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T20:45:21.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "silabo.aspx",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\silabo.aspx",
+              "RelativeDocumentMoniker": "sidiWeb\\student\\silabo.aspx",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\silabo.aspx",
+              "RelativeToolTip": "sidiWeb\\student\\silabo.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-05T20:42:37.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SiteStudent.master",
               "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\SiteStudent.master",
               "RelativeDocumentMoniker": "sidiWeb\\SiteStudent.master",
@@ -54,52 +84,47 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "matricula.aspx.cs",
               "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\matricula.aspx.cs",
               "RelativeDocumentMoniker": "sidiWeb\\student\\matricula.aspx.cs",
               "ToolTip": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\matricula.aspx.cs",
               "RelativeToolTip": "sidiWeb\\student\\matricula.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
-              "WhenOpened": "2026-02-05T16:12:23.506Z"
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T16:12:23.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "matricula.aspx",
               "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\matricula.aspx",
               "RelativeDocumentMoniker": "sidiWeb\\student\\matricula.aspx",
               "ToolTip": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\student\\matricula.aspx",
               "RelativeToolTip": "sidiWeb\\student\\matricula.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
-              "WhenOpened": "2026-02-05T16:11:07.393Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-05T16:11:07.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SiteStudent.master.cs",
               "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\SiteStudent.master.cs",
               "RelativeDocumentMoniker": "sidiWeb\\SiteStudent.master.cs",
               "ToolTip": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\SiteStudent.master.cs",
               "RelativeToolTip": "sidiWeb\\SiteStudent.master.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
-              "WhenOpened": "2026-02-05T16:04:55.098Z"
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T16:04:55.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\IDI-Network\\sidiWeb\\sidiWeb\\Web.config",
               "RelativeDocumentMoniker": "sidiWeb\\Web.config",
@@ -109,10 +134,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-02-05T14:30:21.25Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
