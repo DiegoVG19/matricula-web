@@ -63,5 +63,10 @@ namespace sidiWeb
         {
             Response.Redirect("pagos.aspx");
         }
+        protected void btnMatricula_Click(object sender, EventArgs e)
+        {
+            
+            Response.Redirect("matricula.aspx");
+        }
     }
 }

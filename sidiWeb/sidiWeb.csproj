@@ -195,6 +195,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\matricula.aspx.cs">
+      <DependentUpon>matricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\matricula.aspx.designer.cs">
+      <DependentUpon>matricula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\pagos.aspx.cs">
       <DependentUpon>pagos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,6 +254,7 @@
     <Content Include="student\grupos.aspx" />
     <Content Include="student\index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="student\matricula.aspx" />
     <Content Include="student\pagos.aspx" />
     <Content Include="student\perfil.aspx" />
     <Content Include="Resources\err.css" />

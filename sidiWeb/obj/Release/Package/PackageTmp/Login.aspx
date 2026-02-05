@@ -48,12 +48,17 @@
                             </asp:RequiredFieldValidator>
                         </div>
                         <div>
-                            <asp:label ID="lblError" runat="server" class="form-label text-red fw-bold"></asp:label>
+                            <asp:label ID="lblError" runat="server" class="form-label text-danger fw-bold"></asp:label>
                         </div>
                         <br />
                         <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" 
                             CssClass="btn btn-login w-100" OnClick="btnIngresar_Click"/>
+                        <br />
                     </form>
+                    <br />
+                    <div>
+                        <a href="https://drive.google.com/file/d/1Ubm-q4tpJSd0_RzgGrJIGZKcgnWJGQiE/view?usp=sharing" target="_blank" class="nav-link text-white text-decoration-underline">Necesito ayuda</a>
+                    </div>
                 </div>
             </div>
         </div>
