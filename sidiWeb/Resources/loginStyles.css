@@ -64,3 +64,44 @@
         font-size: 1.8rem;
     }
 }
+/* Ajustes para todas las pantallas */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Evita scroll horizontal molesto */
+}
+
+/* Pantallas Pequeñas (Celulares) */
+@media (max-width: 576px) {
+    .display-5 {
+        font-size: 1.8rem !important; /* Título más compacto */
+    }
+
+    .login-box {
+        padding: 10px;
+    }
+
+    .btn-ingresar {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas Medianas (Tablets) */
+@media (min-width: 577px) and (max-width: 991px) {
+    .bg-primary {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/INTRANET.JPG');
+        background-size: cover;
+        background-position: center;
+    }
+    /* En tablet, como la imagen de la izquierda desaparece, la ponemos de fondo suave */
+}
+
+/* Efectos de los Iconos */
+.social-links a i {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover i {
+    transform: translateY(-5px);
+    color: #ffc107 !important;
+}

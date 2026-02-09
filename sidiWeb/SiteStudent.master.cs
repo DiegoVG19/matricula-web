@@ -73,5 +73,15 @@ namespace sidiWeb
 
             Response.Redirect("silabo.aspx");
         }
+        protected void btnPagalo_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("pagalo.aspx");
+        }
+        protected void btnRecordAsis_Click (object sender, EventArgs e)
+        {
+            Response.Redirect("recordasis.aspx");
+           
+        }
     }
 }

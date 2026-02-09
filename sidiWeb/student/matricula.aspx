@@ -4,8 +4,7 @@
     <div class="container mt-4">
         <div class="card shadow-sm p-4" style="border-radius: 15px;">
             <h2 class="text-primary"><i class="fas fa-graduation-cap"></i> Matrícula Virtual</h2>
-            <p class="text-muted">Estudiante: <strong>ESPINOZA RAMIREZ MIGUEL ALEJANDRO
-</strong></p>
+            <p class="text-muted">Estudiante: <strong>ESPINOZA RAMIREZ MIGUEL ALEJANDRO</strong></p>
             <hr />
 
             <asp:Panel ID="pnlVoucher" runat="server">
@@ -26,16 +25,6 @@
                 <p class="lead">Hemos recibido su documento. El administrador validará el pago y asignará su curso en breve.</p>
                 <div class="badge badge-secondary p-2">Estado: Pendiente de Confirmación</div>
             </asp:Panel>
-
-            <!--<asp:Panel ID="pnlFinal" runat="server" Visible="false" CssClass="text-center py-4">
-                <i class="fas fa-check-circle text-success fa-5x mb-3"></i>
-                <h2 class="text-success">¡Matrícula Exitosa!</h2>
-                <div class="card bg-light p-3 text-left d-inline-block mt-3" style="min-width: 300px;">
-                    <p class="mb-1"><strong>Curso:</strong> Inglés Básico II</p>
-                    <p class="mb-1"><strong>Horario:</strong> Sábados 15:00 - 19:00</p>
-                    <p class="mb-0"><strong>Modalidad:</strong> Virtual (Plataforma Zoom)</p>
-                </div>
-            </asp:Panel>-->
         </div>
     </div>
 </asp:Content>

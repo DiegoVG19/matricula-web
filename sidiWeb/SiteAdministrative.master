@@ -22,7 +22,7 @@
                 <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle">
                     <i class="fas fa-bars"></i>
                 </button>
-                <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <a class="navbar-brand text-white d-flex align-items-center" href="https://idiomas.unjfsc.edu.pe/">
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-blanco-A1JJhAwKMF7P9YztGcsdqNthXCz5tK.png" alt="IDIOMAS FAUSTINO Logo" class="institute-logo" style="max-height: 40px; width: auto;" />
                 </a>
                 <div class="ms-auto">
@@ -59,6 +59,7 @@
             <div class="row">
                 <!-- Sidebar -->
                 <div class="col-md-3 col-lg-2 sidebar">
+
                     <div class="nav flex-column">
                         <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
                     <i class="fas fa-user"></i> Perfil
