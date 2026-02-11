@@ -269,6 +269,7 @@
     <Content Include="img\logo.png" />
     <Content Include="instructor\index.aspx" />
     <Content Include="Resources\adminStyles.css" />
+    <Content Include="Resources\paginacion.css" />
     <Content Include="student\detallegrupo.aspx" />
     <Content Include="error404.aspx" />
     <Content Include="favicon.ico" />

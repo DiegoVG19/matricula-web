@@ -4,7 +4,7 @@
     <div class="container mt-4">
         <div class="card shadow-sm border-0" style="border-radius: 15px;">
             <div class="card-body text-center p-5">
-                <img src="https://play-lh.googleusercontent.com/VmEDA548jPYQVBNrWYb1ZNqAr-opQbRBrxIjKBHmS9kVX4tD1hh6LkzVzxSR0TXhiK0" alt="Págalo.pe" style="max-width: 200px;" class="mb-4" />
+                <img src="https://th.bing.com/th/id/OIP.Gp0TcTzTuf9rLbnnijTEbAHaHa?w=156&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Págalo.pe" style="max-width: 200px;" class="mb-4" />
                 
                 <h2 class="text-primary font-weight-bold">Plataforma Págalo.pe</h2>
                 <p class="lead text-muted">Realiza el pago de tus tasas académicas de forma rápida y segura desde el Banco de la Nación.</p>

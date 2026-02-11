@@ -1,0 +1,256 @@
+﻿
+/* Estilos de carga y contenedores */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #004494;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+    .input-wrapper i {
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        color: #004494;
+    }
+
+.info-input {
+    width: 100%;
+    padding: 8px 10px 8px 35px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    color: #000;
+}
+
+/* Estilos de la Tabla */
+.table-hover {
+    margin-bottom: 0 !important;
+}
+
+    /* Cabecera: Blanco, sin subrayado y fondo azul */
+    .table-hover th {
+        background-color: #004494 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        padding: 12px !important;
+        border: none !important;
+    }
+
+        .table-hover th a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+
+    /* Contenido: Letra negra normal */
+    .table-hover td {
+        color: #000000 !important;
+        padding: 12px !important;
+        border-bottom: 1px solid #eee;
+    }
+
+/* Quitar barra lateral y ajustar bordes */
+.overflow-hidden {
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0;
+}
+
+/* Espaciado para la paginación */
+.pagination-modern table {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+}
+/* --- Variables de Color --- */
+:root {
+    --primary: #004494;
+    --primary-light: #0062d4;
+    --bg-card: #ffffff;
+    --text-dark: #2d3748;
+    --text-muted: #a0aec0;
+    --border-color: #e2e8f0;
+}
+
+/* --- Contenedor de Tarjeta --- */
+.info-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* --- Buscador Moderno --- */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    .input-wrapper i {
+        position: absolute;
+        left: 15px;
+        color: var(--primary);
+        z-index: 10;
+    }
+
+.info-input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: #fdfdfd;
+    font-size: 0.95rem;
+}
+
+    .info-input:focus {
+        border-color: var(--primary-light);
+        box-shadow: 0 0 0 4px rgba(0, 68, 148, 0.1);
+        outline: none;
+        background: #fff;
+    }
+
+/* --- Tabla Premium --- */
+.table-custom {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    .table-custom thead th {
+        background-color: var(--primary) !important;
+        color: white !important;
+        padding: 18px 15px !important;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border: none !important;
+    }
+
+    .table-custom tbody td {
+        padding: 15px !important;
+        vertical-align: middle !important;
+        color: var(--text-dark);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .table-custom tbody tr:hover {
+        background-color: #f8fafc !important;
+    }
+
+/* --- Badges y Detalles --- */
+.badge-recibo {
+    background: #eef2f7;
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border: 1px solid var(--border-color);
+}
+
+/* --- Paginación Estilizada --- */
+/* --- ESTILO DE PAGINACIÓN ÚNICAMENTE --- */
+.pagination-modern table {
+    margin: 25px auto !important; /* Centra la paginación y le da aire */
+    border-collapse: separate !important;
+    border-spacing: 8px 0 !important; /* Espacio entre los cuadritos */
+}
+
+.pagination-modern td {
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Números NO seleccionados (2, 3, etc.) */
+.pagination-modern a {
+    background-color: #f0f4f8 !important; /* Blanco azulado muy claro */
+    color: #004494 !important; /* Texto azul */
+    padding: 10px 16px !important;
+    border-radius: 12px !important; /* Bordes redondeados */
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+    transition: all 0.2s ease;
+}
+
+/* Número seleccionado (Página 1) */
+.pagination-modern span {
+    background-color: #20ABE3 !important; /* Azul fuerte de tu imagen */
+    color: #ffffff !important; /* Texto blanco */
+    padding: 10px 16px !important;
+    border-radius: 12px !important; /* Bordes redondeados */
+    display: inline-block !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 10px rgba(0, 68, 148, 0.25); /* Sombra suave */
+}
+
+/* Efecto al pasar el mouse sobre los números */
+.pagination-modern a:hover {
+    background-color: #e2e8f0 !important;
+    transform: translateY(-2px);
+}
+
+/* --- Spinner de Carga (UpdateProgress) --- */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    border: 5px solid #e2e8f0;
+    border-top: 5px solid var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
