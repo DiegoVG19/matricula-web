@@ -176,6 +176,11 @@ body {
         transform: scale(1.05);
     }
 
+.custom-btn:hover {
+    background-color: var(--primary-color);
+    border-color: #003366;
+}
+
 .profile-info {
     background-color: white;
     border-radius: 10px;

@@ -10,7 +10,7 @@
                         <i class="fas fa-file-invoice me-2"></i>ASISTENCIAS Y NOTAS
                     </h5> <br /><br />
                     
-                    <div class="d-flex gap-3 align-items-center"> 
+                    <div class="d-flex flex-column flex-lg-row gap-3 align-items-center"> 
                         <div class="d-flex align-items-center">
                             <span class="small font-weight-bold text-secondary me-2">IDIOMA:</span>
                             <asp:DropDownList ID="ddlIdiomaFiltro" runat="server" CssClass="form-select form-select-sm" 

@@ -72,7 +72,7 @@ body, html {
 }
 
 /* Pantallas Pequeñas (Celulares) */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .display-5 {
         font-size: 1.8rem !important; /* Título más compacto */
     }
@@ -83,6 +83,10 @@ body, html {
 
     .btn-ingresar {
         font-size: 1rem;
+    }
+
+    .background-container{
+        display: none
     }
 }
 
