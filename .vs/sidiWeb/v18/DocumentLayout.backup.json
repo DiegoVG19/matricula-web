@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project Intranet IDI\\INTRANET\\",
+  "WorkspaceRootPath": "C:\\Users\\chino\\source\\repos\\INTRANET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|d:\\project intranet idi\\intranet\\sidiweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|c:\\users\\chino\\source\\repos\\intranet\\sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|c:\\users\\chino\\source\\repos\\intranet\\sidiweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\Project Intranet IDI\\INTRANET\\sidiweb\\student\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\INTRANET\\sidiweb\\student\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\Project Intranet IDI\\INTRANET\\sidiweb\\resources\\studentstyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\INTRANET\\sidiweb\\resources\\studentstyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\resources\\studentstyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\Project Intranet IDI\\INTRANET\\sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\INTRANET\\sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|D:\\Project Intranet IDI\\INTRANET\\sidiweb\\student\\pagos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|C:\\Users\\chino\\source\\repos\\INTRANET\\sidiweb\\student\\pagos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D5EA2766-04ED-4C50-B4E3-A0E677D38CCF}|sidiWeb\\sidiWeb.csproj|solutionrelative:sidiweb\\student\\pagos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -30,15 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Web.config",
+              "RelativeDocumentMoniker": "sidiWeb\\Web.config",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Web.config",
+              "RelativeToolTip": "sidiWeb\\Web.config",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAwwGYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-16T20:53:20.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "matricula.aspx",
-              "DocumentMoniker": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\matricula.aspx",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\matricula.aspx",
               "RelativeDocumentMoniker": "sidiWeb\\student\\matricula.aspx",
-              "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\matricula.aspx",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\matricula.aspx",
               "RelativeToolTip": "sidiWeb\\student\\matricula.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -46,11 +67,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "pagos.aspx",
-              "DocumentMoniker": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\pagos.aspx",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\pagos.aspx",
               "RelativeDocumentMoniker": "sidiWeb\\student\\pagos.aspx",
-              "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\pagos.aspx",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\pagos.aspx",
               "RelativeToolTip": "sidiWeb\\student\\pagos.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -58,11 +79,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "studentStyles.css",
-              "DocumentMoniker": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\Resources\\studentStyles.css",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Resources\\studentStyles.css",
               "RelativeDocumentMoniker": "sidiWeb\\Resources\\studentStyles.css",
-              "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\Resources\\studentStyles.css",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Resources\\studentStyles.css",
               "RelativeToolTip": "sidiWeb\\Resources\\studentStyles.css",
               "ViewState": "AgIAAKgAAAAAAAAAAAAAALAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -70,11 +91,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "index.aspx.cs",
-              "DocumentMoniker": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\index.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\index.aspx.cs",
               "RelativeDocumentMoniker": "sidiWeb\\student\\index.aspx.cs",
-              "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\student\\index.aspx.cs",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\student\\index.aspx.cs",
               "RelativeToolTip": "sidiWeb\\student\\index.aspx.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAqwIsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -82,11 +103,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.aspx",
-              "DocumentMoniker": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\Login.aspx",
+              "DocumentMoniker": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Login.aspx",
               "RelativeDocumentMoniker": "sidiWeb\\Login.aspx",
-              "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\Login.aspx",
+              "ToolTip": "C:\\Users\\chino\\source\\repos\\INTRANET\\sidiWeb\\Login.aspx",
               "RelativeToolTip": "sidiWeb\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

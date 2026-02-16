@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\sidiWeb",
-    "\\sidiWeb\\administrative"
+    ""
   ],
-  "SelectedNode": "\\sidiWeb\\administrative\\index.aspx.cs",
+  "SelectedNode": "\\sidiWeb.sln",
   "PreviewInSolutionExplorer": false
 }
