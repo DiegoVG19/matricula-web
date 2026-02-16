@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container mt-4">
         <div class="card shadow-sm p-4" style="border-radius: 15px;">
-            <h2 class="text-primary"><i class="fas fa-graduation-cap"></i> Matrícula Virtual</h2>
+            <h2 class="text-primary"><i class="fas fa-graduation-cap"></i> MATRICULA VIRTUAL</h2>
             <p class="text-muted">Estudiante: <strong>ESPINOZA RAMIREZ MIGUEL ALEJANDRO</strong></p>
             <hr />
 

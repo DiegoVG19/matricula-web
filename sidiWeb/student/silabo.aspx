@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container mt-4">
         <div class="card shadow-sm p-4">
-            <h2 class="text-primary"><i class="fas fa-file-pdf"></i> Material del Curso</h2>
+            <h2 class="text-primary"><i class="fas fa-file-pdf"></i> MATERIAL DEL CURSO</h2>
             <p class="text-muted">Aquí podrás descargar el sílabo oficial y los materiales compartidos por tu instructor.</p>
             <hr />
 

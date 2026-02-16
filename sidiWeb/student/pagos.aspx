@@ -17,7 +17,9 @@
     <div class="info-card mb-4" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="m-0"><i class="fas fa-file-invoice-dollar text-primary me-2"></i>Historial de Pagos</h2>
+    <h2 class="m-0 text-primary">
+        <i class="fas fa-file-invoice-dollar me-2"></i>HISTORIAL DE PAGOS
+                </h2>
             </div>
             <div class="col-md-6 mt-3 mt-md-0">
                 <asp:UpdatePanel ID="upSearch" runat="server">
