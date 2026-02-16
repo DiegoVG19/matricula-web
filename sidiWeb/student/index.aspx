@@ -4,10 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="profile-header">
-        <asp:Label class="mb-0 fw-bold h2" runat="server" ID="lblEstudiante">NOMBRES Y APELLIDOS DEL ESTUDIANTE</asp:Label>
-        <div class="profile-photo-container">
-            <div class="profile-photo-placeholder">
-                <i class="fas fa-user"></i>
+        <div class="d-flex flex-row-reverse flex-lg-column gap-2">
+            <asp:Label class="mb-0 fw-bold h2 align-content-center" runat="server" ID="lblEstudiante">NOMBRES Y APELLIDOS DEL ESTUDIANTE</asp:Label>
+            <div class="profile-photo-container">
+                <div class="profile-photo-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -47,15 +49,10 @@
                 </div>
                 <div class="info-group">
                     <div class="info-label">Fecha de nacimiento</div>
-                    <asp:TextBox ID="txtNacimiento" runat="server" TextMode="Date" CssClass="form-control" Visible="false">987654321</asp:TextBox>
                     <asp:Label ID="lblNacimiento" runat="server" class="info-value">XX/XX/XX</asp:Label>
                 </div>
                 <div class="info-group">
                     <div class="info-label">Género</div>
-                    <asp:DropDownList ID="ddlGenero" runat="server" Visible="false" CssClass="form-control">
-                        <asp:ListItem Text="MASCULINO" Value="MASCULINO"/>
-                        <asp:ListItem Text="FEMENINO" Value="FEMENINO"/>
-                    </asp:DropDownList>
                     <asp:Label ID="lblGenero" runat="server" class="info-value">INDEFINIDO</asp:Label>
                 </div>
                 <div class="info-group">

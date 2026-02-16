@@ -87,15 +87,6 @@ namespace sidiWeb
         protected global::System.Web.UI.WebControls.Label lblDni;
 
         /// <summary>
-        /// Control txtNacimiento.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNacimiento;
-
-        /// <summary>
         /// Control lblNacimiento.
         /// </summary>
         /// <remarks>
@@ -103,15 +94,6 @@ namespace sidiWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNacimiento;
-
-        /// <summary>
-        /// Control ddlGenero.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGenero;
 
         /// <summary>
         /// Control lblGenero.

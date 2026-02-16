@@ -60,7 +60,7 @@
     <asp:UpdatePanel ID="upTable" runat="server">
         <ContentTemplate>
             <div class="info-card p-0 overflow-hidden" style="background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <div class="table-responsive" style="overflow-x: hidden;">
+                <div class="table-responsive" style="overflow-x: auto;">
                     <asp:GridView ID="gvPagos" runat="server" 
                         CssClass="table table-hover mb-0"
                         AutoGenerateColumns="false" 
@@ -82,7 +82,7 @@
                 Text="FECHA" 
                 CssClass="btn-header" />
             
-            <span style="font-size: 1.2em; color: #20ABE3;">
+            <span style="font-size: 1.2em; color: #ffffff;">
                 <i class="fas fa-sort"></i> </span>
         </div>
     </HeaderTemplate>
