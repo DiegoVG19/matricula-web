@@ -72,6 +72,50 @@
             </asp:LinkButton>
         </div>
     </div>
+  <div class="modal fade" id="modalAviso" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;"> 
+        <div class="modal-content border-0">
+            <div class="modal-header text-white border-0" style="background-color: #003366;">
+                <h5 class="modal-title w-100 text-center fw-bold">¡APARTURA Y CIERRE DE MATRÍCULAS!</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0" style="height: 450px; overflow: hidden;">
+                <img src="<%= UrlImagenJS %>" 
+                    class="w-100 h-100" 
+                        style="object-fit: fill;" 
+                    alt="Aviso">
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        $(document).ready(function () {
+            var strInicio = "<%= FechaInicioJS %>";
+            var strFin = "<%= FechaFinJS %>";
+            var urlImg = "<%= UrlImagenJS %>";
+
+            if (strInicio && strFin && urlImg) {
+                var hoy = new Date();
+                var fechaInicio = new Date(strInicio + "T00:00:00");
+                var fechaFin = new Date(strFin + "T23:59:59");
+
+                if (hoy >= fechaInicio && hoy <= fechaFin) {
+                    var imgPrueba = new Image();
+                    imgPrueba.src = urlImg;
+
+                    imgPrueba.onload = function () {
+                        // Ahora sí, el script busca el ID "modalAviso" y lo muestra
+                        var myModal = new bootstrap.Modal(document.getElementById('modalAviso'));
+                        myModal.show();
+                    };
+
+                    imgPrueba.onerror = function () {
+                        console.error("El link de la imagen en el CSV está roto.");
+                    };
+                }
+            }
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script>

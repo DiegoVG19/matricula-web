@@ -12,6 +12,10 @@ namespace sidiWeb
 {
     public partial class index1 : System.Web.UI.Page
     {
+        public string FechaInicioJS { get; set; } = "";
+        public string FechaFinJS { get; set; } = "";
+        public string UrlImagenJS { get; set; } = "";
+
         String dni, userId;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,6 +28,42 @@ namespace sidiWeb
             {
                 userId = Session["UserId"].ToString();
                 loadStudentData();
+            }
+
+            // Aquí es donde llamas al método que lee el CSV
+            if (!IsPostBack)
+            {
+                CargarConfiguracionAviso(); // <-- Te faltaba llamar al método aquí
+            }
+        }
+        private void CargarConfiguracionAviso()
+        {
+            try
+            {
+                string rutaArchivo = Server.MapPath("~/App_Data/config_aviso.csv");
+
+                if (System.IO.File.Exists(rutaArchivo))
+                {
+                    // Usamos ReadAllText y luego Split
+                    string contenido = System.IO.File.ReadAllText(rutaArchivo);
+
+                    // Verificamos que el archivo no esté vacío
+                    if (!string.IsNullOrEmpty(contenido))
+                    {
+                        string[] datos = contenido.Split(',');
+
+                        if (datos.Length >= 3)
+                        {
+                            FechaInicioJS = datos[0].Trim();
+                            FechaFinJS = datos[1].Trim();
+                            UrlImagenJS = datos[2].Trim();
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                // Error silencioso: las variables quedan vacías y el modal no abre
             }
         }
 
