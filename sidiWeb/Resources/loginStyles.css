@@ -109,3 +109,7 @@ body, html {
     transform: translateY(-5px);
     color: #ffc107 !important;
 }
+
+    img {
+        mask-image: linear-gradient(#fff 80%, transparent);
+    }
