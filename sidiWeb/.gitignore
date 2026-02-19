@@ -1,0 +1,47 @@
+# =========================
+# Visual Studio
+# =========================
+
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# ASP.NET
+App_Data/*.mdf
+App_Data/*.ldf
+
+# IIS Express
+.config/
+applicationhost.config
+
+# NuGet
+packages/
+*.nupkg
+
+# Rider / VSCode
+.idea/
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.txt
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Publish
+Publish/
+*.pubxml.user
