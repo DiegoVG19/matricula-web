@@ -29,12 +29,12 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;"> 
         <div class="modal-content border-0">
             <div class="modal-header text-white border-0" style="background-color: #003366;">
-                <h5 class="modal-title w-100 text-center fw-bold">¡APARTURA Y CIERRE DE MATRÍCULAS!</h5>
+                <h5 class="section-title"><i class="fas fa-users"></i>Información del Grupo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0" style="height: 450px; overflow: hidden;">
                 <div class="card p-4 shadow-sm">
-                    <h5 class="section-title"><i class="fas fa-users"></i>Información del Grupo</h5>
+                    
                     <div class="group-info-grid">
                         <div>
                             <strong>NÚMERO:</strong>
