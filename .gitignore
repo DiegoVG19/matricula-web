@@ -1,0 +1,24 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# IIS Express
+.vs/
+*.dbmdl
+
+# OS files
+Thumbs.db
+.DS_Store
