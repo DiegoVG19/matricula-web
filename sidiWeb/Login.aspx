@@ -22,6 +22,7 @@
             <div class="col-md-6 d-lg-flex d-md-flex d-none align-items-center justify-content-center p-0" style="overflow: hidden; min-height: 100vh;">
                 <div class="w-100 h-100">
                     <img src="img/INTRANET.JPG"
+                         id="img-intranet"
                         alt="Instituto de Idiomas"
                         style="width: 100%; height: 100vh; object-fit: cover; display: block;" />
                 </div>
