@@ -1,0 +1,360 @@
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\sidiWeb.dll.config
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\sidiWeb.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\sidiWeb.pdb
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csc.exe
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csc.exe.config
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csc.rsp
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csi.exe
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csi.exe.config
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\csi.rsp
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.AppContext.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Console.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Globalization.Calendars.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.IO.Compression.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Net.Http.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Net.Sockets.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.ValueTuple.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XPath.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\vbc.exe
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\vbc.exe.config
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\vbc.rsp
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\VBCSCompiler.exe
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Antlr3.Runtime.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\EntityFramework.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\EntityFramework.SqlServer.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Newtonsoft.Json.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Helpers.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Mvc.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Optimization.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Razor.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.Deployment.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.Razor.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\WebGrease.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\EntityFramework.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\EntityFramework.SqlServer.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Helpers.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Mvc.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Optimization.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.Razor.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.Deployment.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\System.Web.WebPages.Razor.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Newtonsoft.Json.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Antlr3.Runtime.pdb
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.Helpers.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.Mvc.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.Optimization.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.Razor.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.AssemblyReference.cache
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.CoreCompileInputs.cache
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.Up2Date
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\obj\Debug\sidiWeb.dll
+D:\IDI\SidiWeb\sidiWeb\sidiWeb\obj\Debug\sidiWeb.pdb
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\sidiWeb.dll.config
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\sidiWeb.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\sidiWeb.pdb
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csc.exe
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csc.exe.config
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csc.rsp
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csi.exe
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csi.exe.config
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\csi.rsp
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.AppContext.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Console.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Net.Http.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\vbc.exe
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\vbc.exe.config
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\vbc.rsp
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Antlr3.Runtime.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\EntityFramework.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Newtonsoft.Json.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Helpers.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Mvc.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Optimization.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Razor.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\WebGrease.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\EntityFramework.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Helpers.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Mvc.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Optimization.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.Razor.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Newtonsoft.Json.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Antlr3.Runtime.pdb
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.AssemblyReference.cache
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.CoreCompileInputs.cache
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\obj\Debug\sidiWeb.csproj.Up2Date
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\obj\Debug\sidiWeb.dll
+C:\Users\chino\source\repos\IDI-Network\sidiWeb\sidiWeb\obj\Debug\sidiWeb.pdb
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\sidiWeb.dll.config
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\sidiWeb.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\sidiWeb.pdb
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csc.exe
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csc.exe.config
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csc.rsp
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csi.exe
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csi.exe.config
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\csi.rsp
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.AppContext.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Console.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.IO.Compression.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Net.Http.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Net.Sockets.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.ValueTuple.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Xml.XPath.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\vbc.exe
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\vbc.exe.config
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\vbc.rsp
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\VBCSCompiler.exe
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Antlr3.Runtime.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\EntityFramework.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\EntityFramework.SqlServer.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Newtonsoft.Json.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Helpers.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Mvc.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Optimization.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Razor.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.Razor.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\WebGrease.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\EntityFramework.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\EntityFramework.SqlServer.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Helpers.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Mvc.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Optimization.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.Razor.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\System.Web.WebPages.Razor.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Newtonsoft.Json.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Antlr3.Runtime.pdb
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.Helpers.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.Mvc.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.Optimization.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.Razor.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.WebPages.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.AssemblyReference.cache
+D:\Project Intranet IDI\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.CoreCompileInputs.cache
+D:\Project Intranet IDI\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.Up2Date
+D:\Project Intranet IDI\INTRANET\sidiWeb\obj\Debug\sidiWeb.dll
+D:\Project Intranet IDI\INTRANET\sidiWeb\obj\Debug\sidiWeb.pdb
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\sidiWeb.dll.config
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\sidiWeb.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\sidiWeb.pdb
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csc.exe
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csc.exe.config
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csc.rsp
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csi.exe
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csi.exe.config
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\csi.rsp
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.AppContext.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Console.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Net.Http.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\vbc.exe
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\vbc.exe.config
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\vbc.rsp
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Antlr3.Runtime.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\EntityFramework.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Newtonsoft.Json.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Helpers.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Mvc.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Optimization.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Razor.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\WebGrease.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\EntityFramework.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Helpers.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Mvc.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Optimization.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.Razor.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Newtonsoft.Json.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Antlr3.Runtime.pdb
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.Helpers.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.AssemblyReference.cache
+C:\Users\chino\source\repos\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.CoreCompileInputs.cache
+C:\Users\chino\source\repos\INTRANET\sidiWeb\obj\Debug\sidiWeb.csproj.Up2Date
+C:\Users\chino\source\repos\INTRANET\sidiWeb\obj\Debug\sidiWeb.dll
+C:\Users\chino\source\repos\INTRANET\sidiWeb\obj\Debug\sidiWeb.pdb

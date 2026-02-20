@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbSidiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idusuario" />
+    </Key>
+    <Property Name="idusuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idtrabajador" Type="Int32" />
+    <Property Name="usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idAlumno" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="dbSidiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <FunctionImport Name="buscarUsuario" ReturnType="Collection(dbSidiModel.buscarUsuario_Result)">
+      <Parameter Name="dni" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="detalle_alumno_por_id" ReturnType="Collection(dbSidiModel.detalle_alumno_por_id_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="listar_grupos_alumno" ReturnType="Collection(dbSidiModel.listar_grupos_alumno_Result)">
+      <Parameter Name="nrocarnet" Mode="In" Type="String" />
+      <Parameter Name="idioma" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="listar_idioma" ReturnType="Collection(dbSidiModel.listar_idioma_Result)" />
+    <FunctionImport Name="mostrar_relacion" ReturnType="Collection(dbSidiModel.mostrar_relacion_Result)">
+      <Parameter Name="cod" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="obtener_idalumno" ReturnType="Collection(Int32)">
+      <Parameter Name="idpersona" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="relacion_matriculas" ReturnType="Collection(dbSidiModel.relacion_matriculas_Result)">
+      <Parameter Name="idalumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="buscarUsuario_Result">
+    <Property Type="Int32" Name="idpersona" Nullable="false" />
+    <Property Type="String" Name="dni" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apaterno" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="sexo" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="amaterno" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="idubigeo" Nullable="false" />
+    <Property Type="Int32" Name="edad" Nullable="true" />
+    <Property Type="String" Name="gradoInstruccion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="celular" Nullable="true" MaxLength="11" />
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+    <Property Type="String" Name="correoElectronico" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fechanacimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="detalle_alumno_por_id_Result">
+    <Property Type="String" Name="dni" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="apellidos" Nullable="true" MaxLength="61" />
+    <Property Type="String" Name="sexo" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="edad" Nullable="true" />
+    <Property Type="String" Name="gradoInstruccion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="celular" Nullable="true" MaxLength="11" />
+    <Property Type="Binary" Name="foto" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="correoElectronico" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fechanacimiento" Nullable="true" />
+    <Property Type="String" Name="departamento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="direccion" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="provincia" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="numerocarnet" Nullable="true" MaxLength="9" />
+  </ComplexType>
+  <ComplexType Name="listar_grupos_alumno_Result">
+    <Property Type="Int32" Name="idGrupo" Nullable="false" />
+    <Property Type="String" Name="numero" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="nombreNivel" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ciclo" Nullable="true" />
+    <Property Type="String" Name="nombreIdioma" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="modalidad" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="listar_idioma_Result">
+    <Property Type="Int32" Name="idIdioma" Nullable="false" />
+    <Property Type="String" Name="nombreIdioma" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="mostrar_relacion_Result">
+    <Property Type="Int32" Name="idPago" Nullable="false" />
+    <Property Type="String" Name="RAZON" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="NIVEL" Nullable="true" MaxLength="92" />
+    <Property Type="Decimal" Name="MONTO" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="DateTime" Name="FECH" Nullable="true" />
+    <Property Type="String" Name="RECIBO" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="horario" Nullable="true" MaxLength="330" />
+  </ComplexType>
+  <ComplexType Name="relacion_matriculas_Result">
+    <Property Type="Int32" Name="codigo" Nullable="false" />
+    <Property Type="String" Name="idioma" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="nivel" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="ciclo" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Horario" Nullable="true" MaxLength="330" />
+    <Property Type="String" Name="modalidad" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="fecha" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="monto" Nullable="false" Precision="5" Scale="2" />
+  </ComplexType>
+</Schema>
