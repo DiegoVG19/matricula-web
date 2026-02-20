@@ -172,7 +172,11 @@ namespace sidiWeb
                 {
                     int idGrupo = Convert.ToInt32(btn.CommandArgument);
                     Session["idGrupo"] = idGrupo;
-                    Response.Redirect($"detallegrupo.aspx?grupo={idGrupo}");
+                    string script = @"var myModal = new bootstrap.Modal(document.getElementById('modalInfoGrupo'));
+                                      myModal.show()";
+                    ClientScript.RegisterStartupScript(this.GetType(), "showInfoGrupoScript", script, true);
+                    //Response.Redirect($"detallegrupo.aspx?grupo={idGrupo}");
+
                 }
         }
     }
