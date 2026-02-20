@@ -14,7 +14,7 @@
     <link href="Resources/loginStyles.css" rel="stylesheet" />
 
 </head>
-<body style="background:linear-gradient(135deg, #003153 0%, #004175 100%)">
+<body>
 
     <div class="container-fluid">
         <div class="row">

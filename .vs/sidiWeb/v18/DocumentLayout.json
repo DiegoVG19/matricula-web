@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "sidiWeb\\Resources\\loginStyles.css",
               "ToolTip": "D:\\Project Intranet IDI\\INTRANET\\sidiWeb\\Resources\\loginStyles.css",
               "RelativeToolTip": "sidiWeb\\Resources\\loginStyles.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-02-20T02:04:50.776Z",
               "EditorCaption": ""
@@ -47,7 +47,8 @@
               "RelativeToolTip": "sidiWeb\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-02-20T02:04:46.822Z"
+              "WhenOpened": "2026-02-20T02:04:46.822Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

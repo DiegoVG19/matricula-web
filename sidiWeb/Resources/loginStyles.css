@@ -5,7 +5,7 @@
 
 .form-section {
     background: linear-gradient(135deg, #003153 0%, #004175 100%);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .logo-container img {
