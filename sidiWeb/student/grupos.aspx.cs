@@ -171,13 +171,65 @@ namespace sidiWeb
                 if (btn != null && !string.IsNullOrEmpty(btn.CommandArgument))
                 {
                     int idGrupo = Convert.ToInt32(btn.CommandArgument);
-                    Session["idGrupo"] = idGrupo;
+                    //Carga los datos del grupo seleccionado
+                    loadGroupData(idGrupo.ToString());
+                    //Muestra el modal con información del grupo seleccionado
                     string script = @"var myModal = new bootstrap.Modal(document.getElementById('modalInfoGrupo'));
                                       myModal.show()";
                     ClientScript.RegisterStartupScript(this.GetType(), "showInfoGrupoScript", script, true);
-                    //Response.Redirect($"detallegrupo.aspx?grupo={idGrupo}");
 
                 }
+        }
+
+        private void loadGroupData(String idGrupo)
+        {
+            // Verificar parámetro
+            if (string.IsNullOrEmpty(idGrupo))
+            {
+                return;
+            }
+
+            string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
+
+            using (SqlConnection sqlConnection = new SqlConnection(connect))
+            {
+                SqlCommand cmd = new SqlCommand("listar_grupo_seleccion", sqlConnection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("@idGrupo", idGrupo));
+
+                sqlConnection.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    // Verificar que los controles no sean nulos antes de asignarles valores
+                    if (lblNumero != null) lblNumero.Text = dr["numero"].ToString();
+                    if (lblIdioma != null) lblIdioma.Text = dr["nombreIdioma"].ToString();
+                    if (lblNivel != null) lblNivel.Text = dr["nombreNivel"].ToString();
+                    if (lblCiclo != null) lblCiclo.Text = dr["ciclo"].ToString();
+                    if (lblModalidad != null) lblModalidad.Text = dr["modalidad"].ToString();
+
+                    if (lblDuracion != null && dr["fechaInicio"] != DBNull.Value && dr["fechaFinal"] != DBNull.Value)
+                    {
+                        lblDuracion.Text = Convert.ToDateTime(dr["fechaInicio"]).ToString("dd/MM/yyyy") + " - " +
+                                          Convert.ToDateTime(dr["fechaFinal"]).ToString("dd/MM/yyyy");
+                    }
+
+                    if (lblHorario != null)
+                        lblHorario.Text = dr["horaInicio"].ToString() + " - " + dr["horaFinal"].ToString();
+
+                    if (lblDocente != null) lblDocente.Text = dr["DOCENTE"].ToString();
+                    if (lblDias != null) lblDias.Text = dr["dias"].ToString().ToUpper();
+                }
+                else
+                {
+                    Response.Redirect("index.aspx");
+                }
+
+                dr.Close();
+            }
         }
     }
 }

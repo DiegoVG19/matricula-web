@@ -490,6 +490,7 @@ span[style*="color: #FF0000"] {
         left: 35px; /* Aumentado de 22px a 35px */
         font-size: 1.4rem; /* Aumentado de 1.2rem a 1.4rem */
     }
+
 }
 
 /* Para pantallas extra grandes */
@@ -956,4 +957,14 @@ span[style*="color: #FF0000"] {
 .full-width {
     grid-column: span 2;
 }
+
+@media (max-width: 768 px) {
+    .group-info-grid div {
+        grid-column: span 2;
+    }
+}
+
+
+
+
 

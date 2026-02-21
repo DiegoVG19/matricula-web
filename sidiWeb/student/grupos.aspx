@@ -32,44 +32,43 @@
                 <h5 class="section-title"><i class="fas fa-users"></i>Información del Grupo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-0" style="height: 450px; overflow: hidden;">
-                <div class="card p-4 shadow-sm">
-                    
-                    <div class="group-info-grid">
+            <div class="modal-body p-0" style="height: min-content; overflow: hidden;">
+                <div class="card p-4 h-100">
+                    <div class="group-info-grid d-lg-grid d-md-grid d-sm-flex flex-sm-column">
                         <div>
-                            <strong>NÚMERO:</strong>
+                            <strong>NÚMERO: </strong>
                             <asp:Label ID="lblNumero" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>IDIOMA:</strong>
+                            <strong>IDIOMA: </strong>
                             <asp:Label ID="lblIdioma" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>NIVEL:</strong>
+                            <strong>NIVEL: </strong>
                             <asp:Label ID="lblNivel" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>CICLO:</strong>
+                            <strong>CICLO: </strong>
                             <asp:Label ID="lblCiclo" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>MODALIDAD:</strong>
+                            <strong>MODALIDAD: </strong>
                             <asp:Label ID="lblModalidad" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>HORARIO:</strong>
+                            <strong>HORARIO: </strong>
                             <asp:Label ID="lblHorario" runat="server"></asp:Label>
                         </div>
-                        <div class="full-width">
-                            <strong>DÍAS:</strong>
+                        <div>
+                            <strong>DÍAS: </strong>
                             <asp:Label ID="lblDias" runat="server"></asp:Label>
                         </div>
                         <div>
-                            <strong>DURACIÓN:</strong>
+                            <strong>DURACIÓN: </strong>
                             <asp:Label ID="lblDuracion" runat="server"></asp:Label>
                         </div>
                         <div class="full-width">
-                            <strong>DOCENTE:</strong>
+                            <strong>DOCENTE: </strong>
                             <asp:Label ID="lblDocente" runat="server"></asp:Label>
                         </div>
                     </div>
