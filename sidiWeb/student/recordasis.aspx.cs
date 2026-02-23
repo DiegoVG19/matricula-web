@@ -42,9 +42,19 @@ namespace sidiWeb.student
                 cmd.Parameters.AddWithValue("@numerocarnet", carnetId);
                 con.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
+
                 ddlIdiomaFiltro.Items.Clear();
                 ddlIdiomaFiltro.Items.Add(new ListItem("-- Seleccione --", ""));
-                while (dr.Read()) ddlIdiomaFiltro.Items.Add(new ListItem(dr["nombreIdioma"].ToString(), dr["nombreIdioma"].ToString()));
+
+                while (dr.Read())
+                {
+                    // IMPORTANTE: El primer parámetro es el TEXTO (nombre), 
+                    // el segundo es el VALOR (ID). Esto es lo que faltaba.
+                    ddlIdiomaFiltro.Items.Add(new ListItem(
+                        dr["nombreIdioma"].ToString(),
+                        dr["idIdioma"].ToString()
+                    ));
+                }
             }
         }
 
@@ -58,15 +68,26 @@ namespace sidiWeb.student
                 string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(connect))
                 {
+                    // 1. Cambiamos el nombre del SP si fuera necesario, pero aquí usamos el que pusiste
                     SqlCommand cmd = new SqlCommand("listar_grupos_alumno", con) { CommandType = CommandType.StoredProcedure };
+
+                    // 2. IMPORTANTE: Los nombres de parámetros deben coincidir EXACTAMENTE con el SQL
                     cmd.Parameters.AddWithValue("@nrocarnet", carnetId);
-                    cmd.Parameters.AddWithValue("@idioma", ddlIdiomaFiltro.SelectedValue);
+
+                    // 3. CAMBIO CLAVE: Aquí debe ser @idIdioma (como en el SP) 
+                    // y el Value debe ser el ID (asegúrate que ddlIdiomaFiltro cargue el ID en el Value)
+                    cmd.Parameters.AddWithValue("@idIdioma", ddlIdiomaFiltro.SelectedValue);
+
+                    // 4. Agregamos el nivel como NULL para que el SP nos devuelva todos los ciclos de ese idioma
+                    cmd.Parameters.AddWithValue("@nivel", DBNull.Value);
+
                     con.Open();
                     SqlDataReader dr = cmd.ExecuteReader();
                     ddlCicloFiltro.Items.Add(new ListItem("-- Seleccione --", ""));
                     while (dr.Read())
                     {
-                        ddlCicloFiltro.Items.Add(new ListItem($"{dr["nombreNivel"]} {dr["ciclo"]}", dr["IdGrupo"].ToString()));
+                        // Mantenemos la lógica de mostrar Nivel + Ciclo
+                        ddlCicloFiltro.Items.Add(new ListItem($"{dr["nombreNivel"]} {dr["ciclo"]}", dr["idGrupo"].ToString()));
                     }
                 }
             }
