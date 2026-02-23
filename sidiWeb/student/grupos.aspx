@@ -10,21 +10,31 @@
         </h2>
     </div>
 
-    <div class="grades-container">
-        <div class="language-selector">
-            <label for="ddlIdiomas" class="form-label">Seleccione el idioma:</label>
-            <asp:DropDownList ID="ddlIdiomas" runat="server" CssClass="form-select"
+<div class="grades-container">
+    <div class="row g-3"> 
+        <div class="col-md-6">
+            <label for="ddlIdiomas" class="form-label fw-bold" style="color: #003366;">Seleccione el idioma:</label>
+            <asp:DropDownList ID="ddlIdiomas" runat="server" CssClass="form-select border-primary"
                 AutoPostBack="true" OnSelectedIndexChanged="ddlIdiomas_SelectedIndexChanged">
                 <asp:ListItem Text="Seleccione..." Value="" />
             </asp:DropDownList>
         </div>
 
-        <div class="groups-container mt-4">
-            <asp:Panel ID="pnlGrupos" runat="server" CssClass="groups-grid">
-                <!-- Los botones se generarán dinámicamente -->
-            </asp:Panel>
+        <div class="col-md-6">
+            <label for="ddlNiveles" class="form-label fw-bold" style="color: #003366;">Seleccione el Nivel:</label>
+            <asp:DropDownList ID="ddlNiveles" runat="server" CssClass="form-select border-primary"
+                AutoPostBack="true" Enabled="false" 
+                OnSelectedIndexChanged="ddlNiveles_SelectedIndexChanged">
+                <asp:ListItem Text="Seleccione el Nivel..." Value="" />
+            </asp:DropDownList>
         </div>
     </div>
+
+    <div class="groups-container mt-4">
+        <asp:Panel ID="pnlGrupos" runat="server" CssClass="groups-grid">
+            </asp:Panel>
+    </div>
+</div>
       <div class="modal fade" id="modalInfoGrupo" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;"> 
         <div class="modal-content border-0">

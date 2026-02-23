@@ -11,11 +11,11 @@ namespace sidiWeb
 {
     public partial class grupos : System.Web.UI.Page
     {
-        String dni, userId, carnetId;
+        string userId, carnetId;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Verificar si las variables de sesión existen antes de usarlas
+            // 1. Verificación de Seguridad
             if (Session["UserId"] == null || Session["CarnetId"] == null)
             {
                 Session.Clear();
@@ -23,8 +23,6 @@ namespace sidiWeb
                 return;
             }
 
-            // Inicializar variables después de verificar que existen
-            Session["idGrupo"] = 0;
             userId = Session["UserId"].ToString();
             carnetId = Session["CarnetId"].ToString();
 
@@ -32,165 +30,169 @@ namespace sidiWeb
             {
                 selectLanguage(carnetId);
             }
-
-            // Verificar que ddlIdiomas no sea null y tenga un valor seleccionado
-            if (ddlIdiomas != null && !string.IsNullOrEmpty(ddlIdiomas.SelectedValue))
+            else
             {
-                loadCourses(carnetId, ddlIdiomas.SelectedItem.ToString());
-            }
-        }
-
-        protected void Page_Init(object sender, EventArgs e)
-        {
-            // En Page_Init, ddlIdiomas podría no estar inicializado aún
-            // Es mejor mover esta lógica a Page_Load o a un evento posterior
-            // Si es necesario mantenerlo aquí, agregar verificaciones
-            if (ddlIdiomas != null && !string.IsNullOrEmpty(ddlIdiomas.SelectedValue))
-            {
-                // Verificar que Session["CarnetId"] exista
-                if (Session["CarnetId"] != null)
+                // CRÍTICO: Si hay un postback (clic en un grupo), los botones deben re-crearse
+                // antes de que ASP.NET intente ejecutar el evento Click.
+                if (!string.IsNullOrEmpty(ddlIdiomas.SelectedValue) && !string.IsNullOrEmpty(ddlNiveles.SelectedValue))
                 {
-                    string tempCarnetId = Session["CarnetId"].ToString();
-                    loadCourses(tempCarnetId, ddlIdiomas.SelectedItem.ToString());
+                    loadCourses(carnetId, ddlIdiomas.SelectedValue, ddlNiveles.SelectedValue);
                 }
             }
         }
 
-        private void selectLanguage(String carnetId)
+        private void selectLanguage(string carnetId)
         {
-            if (string.IsNullOrEmpty(carnetId))
-            {
-                return; // Evitar procesar si carnetId es nulo o vacío
-            }
+            if (string.IsNullOrEmpty(carnetId)) return;
 
             string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
             using (SqlConnection sqlConnection = new SqlConnection(connect))
             {
-                    SqlCommand cmd = new SqlCommand("buscar_idiomas_asistencia", sqlConnection)
-                    {
-                        CommandType = System.Data.CommandType.StoredProcedure
-                    };
-                    cmd.Parameters.Add(new SqlParameter("@numerocarnet", carnetId));
+                SqlCommand cmd = new SqlCommand("buscar_idiomas_asistencia", sqlConnection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("@numerocarnet", carnetId));
 
-                    sqlConnection.Open();
-                    SqlDataReader dr = cmd.ExecuteReader();
+                sqlConnection.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
 
-                    // Verificar que ddlIdiomas no sea null antes de usarlo
-                    if (ddlIdiomas != null)
-                    {
-                        ddlIdiomas.Items.Clear();
-                        ddlIdiomas.Items.Add(new ListItem("Seleccione algún idioma", ""));
+                ddlIdiomas.Items.Clear();
+                ddlIdiomas.Items.Add(new ListItem("Seleccione algún idioma", ""));
 
-                        while (dr.Read())
-                        {
-                            ddlIdiomas.Items.Add(new ListItem(
-                               dr["nombreIdioma"].ToString(),
-                               dr["idIdioma"].ToString()
-                            ));
-                        }
-                    }
-                    sqlConnection.Close();
-                
+                while (dr.Read())
+                {
+                    ddlIdiomas.Items.Add(new ListItem(
+                       dr["nombreIdioma"].ToString(),
+                       dr["idIdioma"].ToString()
+                    ));
+                }
             }
         }
 
         protected void ddlIdiomas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Verificar que ddlIdiomas no sea null
-            if (ddlIdiomas == null)
+            if (!string.IsNullOrEmpty(ddlIdiomas.SelectedValue))
             {
-                return;
+                // Limpiamos grupos previos
+                pnlGrupos.Controls.Clear();
+                // Cargamos solo los niveles que el alumno realmente tiene en ese idioma
+                CargarNivelesReales(carnetId, ddlIdiomas.SelectedValue);
             }
-
-            if (string.IsNullOrEmpty(ddlIdiomas.SelectedValue))
+            else
             {
-                if (pnlGrupos != null)
-                {
-                    pnlGrupos.Controls.Clear();
-                }
-                return;
-            }
-
-            // Verificar que carnetId no sea null
-            if (Session["CarnetId"] != null)
-            {
-                string tempCarnetId = Session["CarnetId"].ToString();
-                loadCourses(tempCarnetId, ddlIdiomas.SelectedItem.ToString());
+                ddlNiveles.Items.Clear();
+                ddlNiveles.Enabled = false;
+                pnlGrupos.Controls.Clear();
             }
         }
 
-        private void loadCourses(String carnetId, String language)
+        private void CargarNivelesReales(string carnet, string idIdioma)
         {
-            // Verificar parámetros
-            if (string.IsNullOrEmpty(carnetId) || string.IsNullOrEmpty(language) || pnlGrupos == null)
+            ddlNiveles.Items.Clear();
+            ddlNiveles.Items.Add(new ListItem("Seleccione el Nivel...", ""));
+
+            string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(connect))
             {
-                return;
+                // Usamos el SP enviando nivel NULL para obtener todos los niveles que tiene el alumno
+                SqlCommand cmd = new SqlCommand("listar_grupos_alumno", sqlConnection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("@nrocarnet", carnet));
+                cmd.Parameters.Add(new SqlParameter("@idIdioma", idIdioma));
+                cmd.Parameters.Add(new SqlParameter("@nivel", DBNull.Value));
+
+                sqlConnection.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                HashSet<string> nivelesEncontrados = new HashSet<string>();
+
+                while (dr.Read())
+                {
+                    string nivelNombre = dr["nombreNivel"].ToString();
+                    if (!nivelesEncontrados.Contains(nivelNombre))
+                    {
+                        nivelesEncontrados.Add(nivelNombre);
+                        ddlNiveles.Items.Add(new ListItem(nivelNombre, nivelNombre));
+                    }
+                }
+                ddlNiveles.Enabled = nivelesEncontrados.Count > 0;
             }
+        }
+
+        protected void ddlNiveles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(ddlNiveles.SelectedValue))
+            {
+                loadCourses(carnetId, ddlIdiomas.SelectedValue, ddlNiveles.SelectedValue);
+            }
+            else
+            {
+                pnlGrupos.Controls.Clear();
+            }
+        }
+
+        private void loadCourses(string carnetId, string idIdioma, string nivel)
+        {
+            if (string.IsNullOrEmpty(carnetId) || string.IsNullOrEmpty(idIdioma) || pnlGrupos == null) return;
 
             pnlGrupos.Controls.Clear();
             string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
 
             using (SqlConnection sqlConnection = new SqlConnection(connect))
             {
-                    SqlCommand cmd = new SqlCommand("listar_grupos_alumno", sqlConnection)
+                SqlCommand cmd = new SqlCommand("listar_grupos_alumno", sqlConnection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("@nrocarnet", carnetId));
+                cmd.Parameters.Add(new SqlParameter("@idIdioma", Convert.ToInt32(idIdioma)));
+                cmd.Parameters.Add(new SqlParameter("@nivel", nivel));
+
+                sqlConnection.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    string groupId = dr["idGrupo"].ToString();
+
+                    LinkButton btn = new LinkButton
                     {
-                        CommandType = System.Data.CommandType.StoredProcedure
+                        CssClass = "group-button",
+                        ID = "grupo_" + groupId,
+                        Text = $"<i class='fas fa-book'></i> " +
+                               $"<span>{dr["numero"]}</span>" +
+                               $"<span>{dr["nombreNivel"]} {dr["ciclo"]}</span>",
+                        CommandArgument = groupId
                     };
-                    cmd.Parameters.Add(new SqlParameter("@nrocarnet", carnetId));
-                    cmd.Parameters.Add(new SqlParameter("@idioma", language));
+                    // Suscribimos el evento Click
+                    btn.Click += new EventHandler(btnGrupo_Click);
 
-                    sqlConnection.Open();
-                    SqlDataReader dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        string groupId = dr["IdGrupo"].ToString();
-
-                        LinkButton btn = new LinkButton
-                        {
-                            CssClass = "group-button",
-                            ID = "grupo_" + groupId,
-                            Text = $"<i class='fas fa-book'></i> " +
-                                   $"<span>{dr["numero"]}</span>" +
-                                   $"<span>{dr["nombreNivel"]} {dr["ciclo"]}</span>",
-                            CommandArgument = groupId
-                        };
-                        btn.Click += new EventHandler(btnGrupo_Click);
-
-                        pnlGrupos.Controls.Add(new LiteralControl("<div class='group-item'>"));
-                        pnlGrupos.Controls.Add(btn);
-                        pnlGrupos.Controls.Add(new LiteralControl("</div>"));
-                    }
-                    sqlConnection.Close();
+                    pnlGrupos.Controls.Add(new LiteralControl("<div class='group-item'>"));
+                    pnlGrupos.Controls.Add(btn);
+                    pnlGrupos.Controls.Add(new LiteralControl("</div>"));
+                }
             }
         }
 
         protected void btnGrupo_Click(object sender, EventArgs e)
         {
-                LinkButton btn = (LinkButton)sender;
-                if (btn != null && !string.IsNullOrEmpty(btn.CommandArgument))
-                {
-                    int idGrupo = Convert.ToInt32(btn.CommandArgument);
-                    //Carga los datos del grupo seleccionado
-                    loadGroupData(idGrupo.ToString());
-                    //Muestra el modal con información del grupo seleccionado
-                    string script = @"var myModal = new bootstrap.Modal(document.getElementById('modalInfoGrupo'));
-                                      myModal.show()";
-                    ClientScript.RegisterStartupScript(this.GetType(), "showInfoGrupoScript", script, true);
+            LinkButton btn = (LinkButton)sender;
+            if (btn != null && !string.IsNullOrEmpty(btn.CommandArgument))
+            {
+                loadGroupData(btn.CommandArgument);
 
-                }
+                // Disparar el modal usando ScriptManager (más fiable en postbacks)
+                string script = "var myModal = new bootstrap.Modal(document.getElementById('modalInfoGrupo')); myModal.show();";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "showModal", script, true);
+            }
         }
 
-        private void loadGroupData(String idGrupo)
+        private void loadGroupData(string idGrupo)
         {
-            // Verificar parámetro
-            if (string.IsNullOrEmpty(idGrupo))
-            {
-                return;
-            }
-
             string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
-
             using (SqlConnection sqlConnection = new SqlConnection(connect))
             {
                 SqlCommand cmd = new SqlCommand("listar_grupo_seleccion", sqlConnection)
@@ -204,31 +206,21 @@ namespace sidiWeb
 
                 if (dr.Read())
                 {
-                    // Verificar que los controles no sean nulos antes de asignarles valores
-                    if (lblNumero != null) lblNumero.Text = dr["numero"].ToString();
-                    if (lblIdioma != null) lblIdioma.Text = dr["nombreIdioma"].ToString();
-                    if (lblNivel != null) lblNivel.Text = dr["nombreNivel"].ToString();
-                    if (lblCiclo != null) lblCiclo.Text = dr["ciclo"].ToString();
-                    if (lblModalidad != null) lblModalidad.Text = dr["modalidad"].ToString();
+                    lblNumero.Text = dr["numero"].ToString();
+                    lblIdioma.Text = dr["nombreIdioma"].ToString();
+                    lblNivel.Text = dr["nombreNivel"].ToString();
+                    lblCiclo.Text = dr["ciclo"].ToString();
+                    lblModalidad.Text = dr["modalidad"].ToString();
 
-                    if (lblDuracion != null && dr["fechaInicio"] != DBNull.Value && dr["fechaFinal"] != DBNull.Value)
+                    if (dr["fechaInicio"] != DBNull.Value && dr["fechaFinal"] != DBNull.Value)
                     {
                         lblDuracion.Text = Convert.ToDateTime(dr["fechaInicio"]).ToString("dd/MM/yyyy") + " - " +
-                                          Convert.ToDateTime(dr["fechaFinal"]).ToString("dd/MM/yyyy");
+                                           Convert.ToDateTime(dr["fechaFinal"]).ToString("dd/MM/yyyy");
                     }
-
-                    if (lblHorario != null)
-                        lblHorario.Text = dr["horaInicio"].ToString() + " - " + dr["horaFinal"].ToString();
-
-                    if (lblDocente != null) lblDocente.Text = dr["DOCENTE"].ToString();
-                    if (lblDias != null) lblDias.Text = dr["dias"].ToString().ToUpper();
+                    lblHorario.Text = dr["horaInicio"].ToString() + " - " + dr["horaFinal"].ToString();
+                    lblDocente.Text = dr["DOCENTE"].ToString();
+                    lblDias.Text = dr["dias"].ToString().ToUpper();
                 }
-                else
-                {
-                    Response.Redirect("index.aspx");
-                }
-
-                dr.Close();
             }
         }
     }
