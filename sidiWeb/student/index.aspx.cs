@@ -38,22 +38,21 @@ namespace sidiWeb
         }
         private void CargarConfiguracionAviso()
         {
-            // Si ya se mostró en esta sesión, no hacer nada
             if (Session["ModalAvisoMostrado"] != null)
             {
                 FechaInicioJS = "";
                 FechaFinJS = "";
                 UrlImagenJS = "";
-                return; // Salir sin cargar datos → el JS no abrirá el modal
+                return;
             }
 
             try
             {
-                string rutaArchivo = Server.MapPath("~/aviso/config_aviso.csv");
+                string urlArchivo = "https://idiomas.unjfsc.edu.pe/intranet/avisos/config_aviso.csv";
 
-                if (System.IO.File.Exists(rutaArchivo))
+                using (System.Net.WebClient client = new System.Net.WebClient())
                 {
-                    string contenido = System.IO.File.ReadAllText(rutaArchivo);
+                    string contenido = client.DownloadString(urlArchivo);
 
                     if (!string.IsNullOrEmpty(contenido))
                     {
@@ -65,7 +64,6 @@ namespace sidiWeb
                             FechaFinJS = datos[1].Trim();
                             UrlImagenJS = datos[2].Trim();
 
-                            // Marcar como mostrado en esta sesión
                             Session["ModalAvisoMostrado"] = true;
                         }
                     }
@@ -73,7 +71,7 @@ namespace sidiWeb
             }
             catch (Exception)
             {
-                // Error silencioso
+                // Si no se puede acceder al CSV, el modal simplemente no abre
             }
         }
 

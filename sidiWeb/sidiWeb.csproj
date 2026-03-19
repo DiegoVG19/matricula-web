@@ -265,7 +265,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="img\INTRANET.jpeg" />
+    <Content Include="img\INTRANET.JPG" />
     <Content Include="img\logo.png" />
     <Content Include="instructor\index.aspx" />
     <Content Include="Resources\adminStyles.css" />
@@ -291,7 +291,6 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="aviso\config_aviso.csv" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
