@@ -72,17 +72,17 @@
                         <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
                             <i class="fas fa-star"></i> Grupos
                         </asp:LinkButton>
-                        <!-- Silabo-->
+                        <!-- Silabo
                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnSilabo_Click" class="nav-link">
                             <i class="fas fa-file-download"></i> Descargar Sílabo
-                        </asp:LinkButton>
-                        <!--MatriculaVirtual-->
+                        </asp:LinkButton>-->
+                        <!--MatriculaVirtual
                         <asp:LinkButton ID="btnMatricula" runat="server" OnClick="btnMatricula_Click" class="nav-link">
                             <i class="fas fa-graduation-cap"></i> Matrícula Virtual
-                        </asp:LinkButton>
+                        </asp:LinkButton>-->
                         <asp:LinkButton ID="LinkButton4" runat="server" OnClick="btnRecordAsis_Click" class="nav-link">
-    <i class="fas fa-clipboard-check"></i>Asistencias - Notas
-</asp:LinkButton>
+                            <i class="fas fa-clipboard-check"></i>Asistencias - Notas
+                        </asp:LinkButton>
                         
                         <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
                             <i class="fas fa-dollar-sign"></i> Pagos realizados
@@ -90,12 +90,9 @@
                         <asp:LinkButton ID="LinkButton2" runat="server" OnClick="btnPagalo_Click" class="nav-link">
                             <i class="fas fa-credit-card"></i> Guía Págalo.pe
                         </asp:LinkButton>
-                        <a href="https://unjfsc.edu.pe/aulavirtual/idiomas/login/index.php" target="_blank" class="nav-link">
+                        <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" target="_blank" class="nav-link">
                             <i class="fas fa-user-circle"></i> AULA VIRTUAL
                         </a>
-
-
-
                         <!--<a href="#" class="nav-link">
                             <i class="fas fa-file-alt"></i>Ficha de matrícula
                         </a>-->
@@ -151,3 +148,9 @@
     </form>
 </body>
 </html>
+t-focused');
+                });
+            });
+        });
+    </script>
+</asp:Content>

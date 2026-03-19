@@ -38,16 +38,23 @@ namespace sidiWeb
         }
         private void CargarConfiguracionAviso()
         {
+            // Si ya se mostró en esta sesión, no hacer nada
+            if (Session["ModalAvisoMostrado"] != null)
+            {
+                FechaInicioJS = "";
+                FechaFinJS = "";
+                UrlImagenJS = "";
+                return; // Salir sin cargar datos → el JS no abrirá el modal
+            }
+
             try
             {
-                string rutaArchivo = Server.MapPath("~/App_Data/config_aviso.csv");
+                string rutaArchivo = Server.MapPath("~/aviso/config_aviso.csv");
 
                 if (System.IO.File.Exists(rutaArchivo))
                 {
-                    // Usamos ReadAllText y luego Split
                     string contenido = System.IO.File.ReadAllText(rutaArchivo);
 
-                    // Verificamos que el archivo no esté vacío
                     if (!string.IsNullOrEmpty(contenido))
                     {
                         string[] datos = contenido.Split(',');
@@ -57,13 +64,16 @@ namespace sidiWeb
                             FechaInicioJS = datos[0].Trim();
                             FechaFinJS = datos[1].Trim();
                             UrlImagenJS = datos[2].Trim();
+
+                            // Marcar como mostrado en esta sesión
+                            Session["ModalAvisoMostrado"] = true;
                         }
                     }
                 }
             }
             catch (Exception)
             {
-                // Error silencioso: las variables quedan vacías y el modal no abre
+                // Error silencioso
             }
         }
 

@@ -4,7 +4,7 @@
     <div class="container mt-4">
         <div class="card shadow-sm p-4" style="border-radius: 15px;">
             <h2 class="text-primary"><i class="fas fa-graduation-cap"></i>MATRICULA VIRTUAL</h2>
-            <p class="text-muted">Estudiante: <strong>ESPINOZA RAMIREZ MIGUEL ALEJANDRO</strong></p>
+            <p class="text-muted">Estudiante: <strong>MEDINA VEGA DIEGO ALFREDO</strong></p>
             <hr />
 
             <asp:Panel ID="pnlVoucher" runat="server">

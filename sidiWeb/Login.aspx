@@ -21,7 +21,7 @@
             <!-- Logo Section -->
             <div class="col-md-6 d-lg-flex d-md-flex d-none align-items-center justify-content-center p-0" style="overflow: hidden; min-height: 100vh;">
                 <div class="w-100 h-100">
-                    <img src="img/INTRANET.JPG"
+                    <img src="img/INTRANET.jpeg"
                          id="img-intranet"
                         alt="Instituto de Idiomas"
                         style="width: 100%; height: 100vh; object-fit: cover; display: block;" />
@@ -34,7 +34,7 @@
 
                         <div class="mb-4 mt-0">
                             <div class="text-start mt-0 mb-1">
-                                <h1 class="display-5 fw-bold text-white mt-0 pt-0 text-center" style="margin-top: 0 !important; line-height: 1;">INTRANET IDI
+                                <h1 class="display-5 fw-bold text-white mt-0 pt-0 text-center" style="margin-top: 0 !important; line-height: 1;">INTRANET
                                 </h1>
                             </div>
                             <br />
