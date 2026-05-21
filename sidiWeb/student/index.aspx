@@ -29,7 +29,7 @@
                     <div class="info-label">N° CARNET</div>
 
                     <asp:Label ID="lblNCarnet" runat="server" class="info-value fw-bold">IXXXXXXXX</asp:Label>
-                    <div class="text-danger small fw-bold">El numero de carnet es USUARIO y CONTRASEÑA para el aula virtual.</div>
+                    
                 </div>
                 <div class="info-group">
                     <div class="info-label">Correo electrónico</div>
@@ -46,6 +46,7 @@
                 <div class="info-group">
                     <div class="info-label">N° DNI</div>
                     <asp:Label ID="lblDni" runat="server" class="info-value fw-bold">12345678</asp:Label>
+                    <div class="text-danger small fw-bold">El numero de DNI es USUARIO y CONTRASEÑA para el aula virtual.</div>
                 </div>
                 <div class="info-group">
                     <div class="info-label">Fecha de nacimiento</div>
@@ -76,7 +77,6 @@
     <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;"> 
         <div class="modal-content border-0">
             <div class="modal-header text-white border-0" style="background-color: #003366;">
-                <h5 class="modal-title w-100 text-center fw-bold">¡APARTURA Y CIERRE DE MATRÍCULAS!</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0" style="height: 450px; overflow: hidden;">

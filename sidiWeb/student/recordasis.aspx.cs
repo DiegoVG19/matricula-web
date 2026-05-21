@@ -69,7 +69,7 @@ namespace sidiWeb.student
                 using (SqlConnection con = new SqlConnection(connect))
                 {
                     // 1. Cambiamos el nombre del SP si fuera necesario, pero aquí usamos el que pusiste
-                    SqlCommand cmd = new SqlCommand("listar_grupos_alumno", con) { CommandType = CommandType.StoredProcedure };
+                    SqlCommand cmd = new SqlCommand("listgrupos_alumnosv2", con) { CommandType = CommandType.StoredProcedure };
 
                     // 2. IMPORTANTE: Los nombres de parámetros deben coincidir EXACTAMENTE con el SQL
                     cmd.Parameters.AddWithValue("@nrocarnet", carnetId);

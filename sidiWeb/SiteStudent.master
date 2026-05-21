@@ -12,115 +12,130 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link href="~/Resources/studentStyles.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
-        <!-- Las páginas de contenido pueden agregar elementos específicos al head aquí -->
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-expand-lg top-navbar">
+        <!-- NUEVO: Contenedor principal que centra TODO -->
+        <div class="main-wrapper">
+            
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg top-navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand text-white d-flex align-items-center" 
+                       href="https://idiomas.unjfsc.edu.pe/" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-blanco-A1JJhAwKMF7P9YztGcsdqNthXCz5tK.png" 
+                             alt="IDIOMAS FAUSTINO Logo" 
+                             class="institute-logo" 
+                             style="max-height: 40px; width: auto;" />
+                    </a>
+                    <div class="ms-auto">
+                        <div class="dropdown">
+                            <button class="btn text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-lg"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <asp:LinkButton ID="btnCerrarSesion" runat="server" CssClass="dropdown-item text-danger" OnClick="btnCerrarSesion_Click">
+                                        <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
+                                    </asp:LinkButton>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
             <div class="container-fluid">
-                <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a class="navbar-brand text-white d-flex align-items-center" 
-   href="https://idiomas.unjfsc.edu.pe/" 
-   target="_blank" 
-   rel="noopener noreferrer">
-    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-blanco-A1JJhAwKMF7P9YztGcsdqNthXCz5tK.png" 
-         alt="IDIOMAS FAUSTINO Logo" 
-         class="institute-logo" 
-         style="max-height: 40px; width: auto;" />
-</a>
-                <div class="ms-auto">
-                    <div class="dropdown">
-                        <button class="btn text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user-circle fa-lg"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <!--<li><asp:LinkButton ID="btnEditarPerfil" runat="server" CssClass="dropdown-item" OnClick="btnEditarPerfil_Click">
-                                    <i class="fas fa-user-edit me-2"></i>Editar Perfil
-                                </asp:LinkButton>
-                            </li>
-                            <li>
-                                <asp:LinkButton ID="bntCambiarContra" runat="server" CssClass="dropdown-item" OnClick="btnCambiarContra_Click">
-                                    <i class="fas fa-key me-2"></i>Cambiar contraseña
-                                </asp:LinkButton>
-                            </li>
-                            <li><hr class="dropdown-divider"/></li>-->
-                            <li>
-                                <asp:LinkButton ID="btnCerrarSesion" runat="server" CssClass="dropdown-item text-danger" OnClick="btnCerrarSesion_Click">
-                                    <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
-                                </asp:LinkButton>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-md-3 col-lg-2 sidebar">
+                        <div class="nav flex-column">
+                            <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
+                                <i class="fas fa-user"></i> Perfil
+                            </asp:LinkButton>
+                            <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
+                                <i class="fas fa-star"></i> Grupos
+                            </asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="btnRecordAsis_Click" class="nav-link">
+                                <i class="fas fa-clipboard-check"></i>Asistencias - Notas
+                            </asp:LinkButton>
+                            <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
+                                <i class="fas fa-dollar-sign"></i> Pagos realizados
+                            </asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton2" runat="server" OnClick="btnPagalo_Click" class="nav-link">
+                                <i class="fas fa-credit-card"></i> Guía Págalo.pe
+                            </asp:LinkButton>
+                            <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" target="_blank" class="nav-link">
+                                <i class="fas fa-user-circle"></i> AULA VIRTUAL
+                            </a>
+                            <hr />
+                            <div class="text-muted ps-3">Guía al usuario</div>
+                            <a href="https://bit.ly/42XM5RP" target="_blank" class="nav-link">
+                                <i class="fas fa-book"></i>Reglamento académico
+                            </a>
+                            <a href="https://bit.ly/44QHbaN" target="_blank" class="nav-link">
+                                <i class="fas fa-book"></i>Primeros pasos básicos
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <div class="mb-2 fw-bold">Encuéntranos en:</div>
+                            <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://wa.link/zfdbfh" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="col-md-9 col-lg-10 content-wrapper">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
                     </div>
                 </div>
             </div>
-        </nav>
-
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Sidebar -->
-                <div class="col-md-3 col-lg-2 sidebar">
-                    <div class="nav flex-column">
-                        
-                        <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
-                            <i class="fas fa-user"></i> Perfil
-                        </asp:LinkButton>
-
-                        <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
-                            <i class="fas fa-star"></i> Grupos
-                        </asp:LinkButton>
-                        <!-- Silabo
-                       <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnSilabo_Click" class="nav-link">
-                            <i class="fas fa-file-download"></i> Descargar Sílabo
-                        </asp:LinkButton>-->
-                        <!--MatriculaVirtual
-                        <asp:LinkButton ID="btnMatricula" runat="server" OnClick="btnMatricula_Click" class="nav-link">
-                            <i class="fas fa-graduation-cap"></i> Matrícula Virtual
-                        </asp:LinkButton>-->
-                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="btnRecordAsis_Click" class="nav-link">
-                            <i class="fas fa-clipboard-check"></i>Asistencias - Notas
-                        </asp:LinkButton>
-                        
-                        <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
-                            <i class="fas fa-dollar-sign"></i> Pagos realizados
-                        </asp:LinkButton>
-                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="btnPagalo_Click" class="nav-link">
-                            <i class="fas fa-credit-card"></i> Guía Págalo.pe
-                        </asp:LinkButton>
-                        <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" target="_blank" class="nav-link">
-                            <i class="fas fa-user-circle"></i> AULA VIRTUAL
-                        </a>
-                        <!--<a href="#" class="nav-link">
-                            <i class="fas fa-file-alt"></i>Ficha de matrícula
-                        </a>-->
-                        <hr />
-                        <div class="text-muted ps-3">Guía al usuario</div>
-                        <a href="https://bit.ly/42XM5RP" target="_blank" class="nav-link">
-                            <i class="fas fa-book"></i>Reglamento académico
-                        </a>
-                        <a href="https://bit.ly/44QHbaN" target="_blank" class="nav-link">
-                            <i class="fas fa-book"></i>Primeros pasos básicos
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <div class="mb-2 fw-bold">Encuéntranos en:</div>
-                        <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook"></i></a>
-                       
-                        <a href="https://wa.link/zfdbfh" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <!-- Main Content -->
-                <div class="col-md-9 col-lg-10 content-wrapper">
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                        <!-- El contenido específico de cada página irá aquí -->
-                    </asp:ContentPlaceHolder>
-                </div>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-blanco-A1JJhAwKMF7P9YztGcsdqNthXCz5tK.png" alt="IDIOMAS FAUSTINO">
+            <p>Formando comunicadores globales desde 1999. Inglés, Portugués, Italiano, Francés, Quechua y Chino Mandarín.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
+
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p><strong>Dirección:</strong> Calle Colón N° 455 - Huacho.</p>
+            <p><strong>Atención:</strong> Lunes a Domingo 8am - 10pm.</p>
+            <p><strong>Celular:</strong> +51 953 813 572</p>
+            <p><strong>Email:</strong> Idiomas@unjfsc.edu.pe</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>ACCEDE A NUESTRA COMUNIDAD</h3>
+            <p>Recibe noticias y promociones directamente en tu celular.</p>
+            <a href="https://wa.link/zfdbfh" target="_blank" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2026 Instituto de Idiomas UNJFSC. Todos los derechos reservados.</p>
+    </div>
+</footer>
+            
+        </div>
+        <!-- FIN del main-wrapper -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script>
@@ -143,14 +158,7 @@
             });
         </script>
         <asp:ContentPlaceHolder ID="Scripts" runat="server">
-            <!-- Scripts específicos de cada página irán aquí -->
         </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>
-t-focused');
-                });
-            });
-        });
-    </script>
-</asp:Content>

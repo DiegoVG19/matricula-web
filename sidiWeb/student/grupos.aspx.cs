@@ -83,7 +83,7 @@ namespace sidiWeb
             using (SqlConnection con = new SqlConnection(connect))
             {
                 // Enviamos @nivel como DBNull para obtener todos los niveles registrados del alumno
-                SqlCommand cmd = new SqlCommand("listar_grupos_alumno", con) { CommandType = CommandType.StoredProcedure };
+                SqlCommand cmd = new SqlCommand("listgrupos_alumnosv2", con) { CommandType = CommandType.StoredProcedure };
                 cmd.Parameters.AddWithValue("@nrocarnet", carnet);
                 cmd.Parameters.AddWithValue("@idIdioma", idIdioma);
                 cmd.Parameters.AddWithValue("@nivel", DBNull.Value);
@@ -124,7 +124,7 @@ namespace sidiWeb
 
             using (SqlConnection con = new SqlConnection(connect))
             {
-                SqlCommand cmd = new SqlCommand("listar_grupos_alumno", con) { CommandType = CommandType.StoredProcedure };
+                SqlCommand cmd = new SqlCommand("listgrupos_alumnosv2", con) { CommandType = CommandType.StoredProcedure };
                 cmd.Parameters.AddWithValue("@nrocarnet", carnet);
                 cmd.Parameters.AddWithValue("@idIdioma", idIdioma);
                 cmd.Parameters.AddWithValue("@nivel", nivel);
