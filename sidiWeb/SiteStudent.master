@@ -83,11 +83,6 @@
                                 <i class="fas fa-book"></i>Primeros pasos básicos
                             </a>
                         </div>
-                        <div class="social-links">
-                            <div class="mb-2 fw-bold">Encuéntranos en:</div>
-                            <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://wa.link/zfdbfh" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </div>
                     </div>
 
                     <!-- Main Content -->
@@ -98,39 +93,18 @@
                 </div>
             </div>
    <footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-blanco-A1JJhAwKMF7P9YztGcsdqNthXCz5tK.png" alt="IDIOMAS FAUSTINO">
-            <p>Formando comunicadores globales desde 1999. Inglés, Portugués, Italiano, Francés, Quechua y Chino Mandarín.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/IdiomasFaustino" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-
-        <div class="footer-section">
-            <h3>Contacto</h3>
-            <p><strong>Dirección:</strong> Calle Colón N° 455 - Huacho.</p>
-            <p><strong>Atención:</strong> Lunes a Domingo 8am - 10pm.</p>
-            <p><strong>Celular:</strong> +51 953 813 572</p>
-            <p><strong>Email:</strong> Idiomas@unjfsc.edu.pe</p>
-        </div>
-
-        <div class="footer-section">
-            <h3>ACCEDE A NUESTRA COMUNIDAD</h3>
-            <p>Recibe noticias y promociones directamente en tu celular.</p>
-            <a href="https://wa.link/zfdbfh" target="_blank" class="whatsapp-link">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-        <p>Copyright © 2026 Instituto de Idiomas UNJFSC. Todos los derechos reservados.</p>
+<div id="footer">
+        <table align="center">
+            <tbody><tr>
+                <td style="text-align: center; color: #FFFFFF;">
+                    Universidad Nacional José Faustino Sánchez Carrión<br>
+                    Ciudad Universitaria - Av. Mercedes Indacochea N 609</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; color: #FFFFFF;">
+                    Huacho - Perú </td>
+            </tr>
+        </tbody></table>
     </div>
 </footer>
             

@@ -44,9 +44,9 @@
             </div>
             <div class="col-md-6">
                 <div class="info-group">
-                    <div class="info-label">N° DNI</div>
-                    <asp:Label ID="lblDni" runat="server" class="info-value fw-bold">12345678</asp:Label>
-                    <div class="text-danger small fw-bold">El numero de DNI es USUARIO y CONTRASEÑA para el aula virtual.</div>
+                    <div class="info-label">N° DNI </div>
+                    <asp:Label ID="lblDni" runat="server" class="info-value fw-bold"> 12345678</asp:Label>
+                    <div class="text-danger small fw-bold">  El numero de DNI es USUARIO y CONTRASEÑA para el aula virtual.</div>
                 </div>
                 <div class="info-group">
                     <div class="info-label">Fecha de nacimiento</div>

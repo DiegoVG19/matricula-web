@@ -68,7 +68,7 @@
                         AutoGenerateColumns="false" 
                         DataKeyNames="IdPago"
                         AllowPaging="true" 
-                        PageSize="10" 
+                        PageSize="8" 
                         AllowSorting="true"
                         OnPageIndexChanging="gvPagos_PageIndexChanging"
                         OnSorting="gvPagos_Sorting"
