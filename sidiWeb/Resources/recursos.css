@@ -1,0 +1,91 @@
+﻿body {
+    background-color: #f0f8f9; /* Fondo celeste muy claro estilo LingoHub */
+}
+
+.dashboard-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+    .dashboard-card:hover {
+        transform: translateY(-3px);
+    }
+
+.card-title-custom {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.resource-item {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+    .resource-item:hover {
+        background-color: #e2e8f0;
+    }
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+/* Paleta de colores suaves basada en tu modelo */
+.bg-spark {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.bg-aula {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.bg-fumidi {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+.bg-libro {
+    background-color: #ffedd5;
+    color: #c2410c;
+}
+
+.bg-facilita {
+    background-color: #fef9c3;
+    color: #a16207;
+}
+
+.bg-formatos {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Contenedores de Iconos Circulares/Cuadrados */
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0; /* Evita que el icono se deforme en pantallas pequeñas */
+}
+
+/* Colores personalizados para íconos */
+.text-purple {
+    color: #7e22ce;
+}
+
+.bg-spark {
+    background-color: #e0f2fe;
+    color: #036

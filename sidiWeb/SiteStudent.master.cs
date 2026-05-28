@@ -83,5 +83,10 @@ namespace sidiWeb
             Response.Redirect("recordasis.aspx");
            
         }
+        protected void btnrecursos_Click(object sender, EventArgs e)
+        {
+            // Redirecciona al estudiante a la nueva interfaz de recursos
+            Response.Redirect("~/student/recursos.aspx");
+        }
     }
 }
