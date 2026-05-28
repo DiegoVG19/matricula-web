@@ -2,7 +2,7 @@
 <%@ Page Title="Historial de Pagos" Language="C#" MasterPageFile="~/SiteStudent.master" AutoEventWireup="true" CodeBehind="pagos.aspx.cs" Inherits="sidiWeb.student.pagos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="<%= ResolveUrl("~/Resources/paginacion.css") %>" rel="stylesheet" type="text/css" />
+    <link href="/Resources/paginacion.css" rel="stylesheet"/>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

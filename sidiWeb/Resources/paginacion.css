@@ -91,10 +91,10 @@
 /* --- Variables de Color --- */
 :root {
     --primary: #004494;
-    --primary-light: #0062d4;
+    /*--primary-light: #0062d4;*/
     --bg-card: #ffffff;
     --text-dark: #2d3748;
-    --text-muted: #a0aec0;
+    /*--text-muted: #a0aec0;*/
     --border-color: #e2e8f0;
 }
 
