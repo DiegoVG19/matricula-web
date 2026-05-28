@@ -2,12 +2,17 @@
 bin/
 obj/
 
-# Visual Studio files
+# Visual Studio
 .vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+
+# Visual Studio cache
+*.cache
+*.pdb
+*.ilk
 
 # Rider
 .idea/
@@ -16,8 +21,13 @@ obj/
 *.log
 
 # IIS Express
-.vs/
 *.dbmdl
+
+# NuGet packages (si usan restore)
+packages/
+
+# Publish profiles sensibles
+*.pubxml.user
 
 # OS files
 Thumbs.db
