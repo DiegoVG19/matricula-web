@@ -273,10 +273,12 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="img\INTRANET.JPG" />
+    <Content Include="img\logo-instituto-idiomas.png" />
     <Content Include="img\logo.png" />
     <Content Include="instructor\index.aspx" />
     <Content Include="Resources\adminStyles.css" />
     <Content Include="Resources\paginacion.css" />
+    <Content Include="Resources\perfilStudent.css" />
     <Content Include="Resources\recursos.css" />
     <Content Include="student\detallegrupo.aspx" />
     <Content Include="error404.aspx" />

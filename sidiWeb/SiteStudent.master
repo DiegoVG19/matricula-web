@@ -72,7 +72,7 @@
                             <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
                                 <i class="fa-regular fa-credit-card"></i> Pagos realizados
                             </asp:LinkButton>
-                            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
+                            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="btnrecursos_Click" class="nav-link">
                                 <i class="fa-solid fa-layer-group"></i> Recursos
                             </asp:LinkButton>
                             <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
