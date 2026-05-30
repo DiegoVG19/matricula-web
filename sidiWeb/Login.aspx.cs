@@ -50,7 +50,7 @@ namespace sidiWeb
                             break;
                         case "ESTUDIANTE":
                             Session["UserId"] = dr["idAlumno"].ToString();
-                            Response.Redirect("student/index.aspx");
+                            Response.Redirect("~/student/inicioStudent.aspx");
                             break;
                         default:
                             lblError.Text = "Usuario no encontrado";

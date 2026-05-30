@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace sidiWeb
 {
-    public partial class index1 : System.Web.UI.Page
+    public partial class perfilStudent : System.Web.UI.Page
     {
         public string FechaInicioJS { get; set; } = "";
         public string FechaFinJS { get; set; } = "";

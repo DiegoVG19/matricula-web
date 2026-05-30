@@ -49,19 +49,24 @@ namespace sidiWeb
             Response.Redirect("/");
         }
 
+        protected void btnVerInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/student/inicioStudent.aspx");
+        }
+
         protected void btnVerPerfil_Click(object sender, EventArgs e)
         {
-            Response.Redirect("index.aspx");
+            Response.Redirect("perfilStudent.aspx");
         }
 
         protected void btnVerGrupos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("grupos.aspx");
+            Response.Redirect("~/student/grupos.aspx");
         }
 
         protected void btnVerPagos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("pagos.aspx");
+            Response.Redirect("~/student/pagos.aspx");
         }
         protected void btnMatricula_Click(object sender, EventArgs e)
         {
@@ -83,7 +88,7 @@ namespace sidiWeb
             Response.Redirect("recordasis.aspx");
            
         }
-        protected void btnecursos_Click(object sender, EventArgs e)
+        protected void btnrecursos_Click(object sender, EventArgs e)
         {
             // Redirecciona al estudiante a la nueva interfaz de recursos
             Response.Redirect("~/student/recursos.aspx");

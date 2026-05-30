@@ -70,7 +70,7 @@ form {
     }
 
     .top-navbar .btn.text-white {
-        color: #000000 !important;
+        color: var(--text-muted) !important;
         font-size: 20px;
         height: 100%;
         align-items: center;
@@ -96,7 +96,7 @@ form {
 
 /* Menú Lateral (Sidebar) con tamaño fijo */
 .sidebar {
-    background: #f8fafc;
+    background: #ffffff;
     border-right: 1px solid var(--border-color);
     padding: 15px 10px;
     width: 240px; /* ANCHO FIJO DEL MENU */

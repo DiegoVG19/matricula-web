@@ -15,14 +15,13 @@ namespace sidiWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             // 1. Verificación de Seguridad
-            if (Session["UserId"] == null || Session["CarnetId"] == null)
+            if (Session["UserId"] == null)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("~/Login.aspx");
                 return;
             }
 
             userId = Session["UserId"].ToString();
-            carnetId = Session["CarnetId"].ToString();
 
             if (!IsPostBack)
             {

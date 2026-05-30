@@ -1,8 +1,12 @@
-﻿.card {
-    margin: 50px;
-    background-color: yellow;
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    box-shadow: 4px 4px 10px #868686;
+﻿.profile-header {
+    background-image: url("/img/diseño-perfil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+    height: 533px;
+}
+
+.foto-perfil{
+    object-fit: contain;
+    width: 50%;
 }

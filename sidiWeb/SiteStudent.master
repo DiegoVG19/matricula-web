@@ -60,19 +60,19 @@
                     <!-- Sidebar -->
                     <div class="col-md-3 col-lg-2 sidebar">
                         <div class="nav flex-column">
-                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
+                            <asp:LinkButton ID="btnInicio" runat="server" OnClick="btnVerInicio_Click"  class="nav-link">
                                 <i class="fa-regular fa-house"></i> Inicio
                             </asp:LinkButton>
                             <asp:LinkButton ID="btnGrupo" runat="server" OnClick="btnVerGrupos_Click" class="nav-link">
                                 <i class="fa-solid fa-book-open"></i> Mis Cursos
                             </asp:LinkButton>
-                            <asp:LinkButton ID="LinkButton4" runat="server" OnClick="btnRecordAsis_Click" class="nav-link">
+                            <asp:LinkButton ID="btnAsistencias" runat="server" OnClick="btnRecordAsis_Click" class="nav-link">
                                 <i class="fa-regular fa-file-lines"></i> Asistencias y Notas
                             </asp:LinkButton>
                             <asp:LinkButton ID="btnPagos" runat="server" OnClick="btnVerPagos_Click" class="nav-link">
                                 <i class="fa-regular fa-credit-card"></i> Pagos realizados
                             </asp:LinkButton>
-                            <asp:LinkButton ID="LinkButton3" runat="server" OnClick="btnrecursos_Click" class="nav-link">
+                            <asp:LinkButton ID="btnRecursos" runat="server" OnClick="btnrecursos_Click" class="nav-link">
                                 <i class="fa-solid fa-layer-group"></i> Recursos
                             </asp:LinkButton>
                             <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">

@@ -11,7 +11,7 @@ namespace sidiWeb
 {
 
 
-    public partial class index1
+    public partial class perfilStudent
     {
 
         /// <summary>
