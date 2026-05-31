@@ -78,6 +78,11 @@
                             <asp:LinkButton ID="btnPerfil" runat="server" OnClick="btnVerPerfil_Click" class="nav-link">
                                 <i class="fa-regular fa-user"></i> Perfil
                             </asp:LinkButton>
+                    <asp:LinkButton ID="lnkMatricula" runat="server"
+    OnClick="btnMatricula_Click"
+    CssClass="nav-link">
+    <i class="fa-regular fa-user"></i> Matrícula
+</asp:LinkButton>
                             <%--<asp:LinkButton ID="LinkButton2" runat="server" OnClick="btnPagalo_Click" class="nav-link">
                                 <i class="fas fa-credit-card"></i> Guía Págalo.pe
                             </asp:LinkButton>

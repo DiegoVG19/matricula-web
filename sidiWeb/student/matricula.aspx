@@ -1,19 +1,22 @@
-﻿<%@ Page Title="Matrícula Virtual" Language="C#" MasterPageFile="~/SiteStudent.Master" 
-    AutoEventWireup="true" CodeBehind="matricula.aspx.cs" 
+﻿<%@ Page Title="Matrícula Virtual" Language="C#" MasterPageFile="~/SiteStudent.Master"
+    AutoEventWireup="true" CodeBehind="matricula.aspx.cs"
     Inherits="sidiWeb.student.matricula" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="container mt-4">
   <div class="card shadow-sm p-4" style="border-radius:15px;">
-    
+
     <h2 class="text-primary">
       <i class="fas fa-graduation-cap"></i> MATRÍCULA VIRTUAL
     </h2>
+
     <p class="text-muted">
-      Estudiante: <strong>
+      Estudiante:
+      <strong>
         <asp:Label ID="lblNombreAlumno" runat="server" Text=""></asp:Label>
       </strong>
     </p>
+
     <hr />
 
     <%-- PANEL: YA MATRICULADO --%>
@@ -28,6 +31,7 @@
       <i class="fas fa-exclamation-triangle fa-4x text-danger"></i>
       <h3 class="mt-3 text-danger">Requiere autorización académica</h3>
       <p class="lead">Tu situación académica requiere una revisión previa. Por favor acércate al área académica o escríbenos.</p>
+
       <div class="badge badge-danger p-2">
         <asp:Label ID="lblMensajeAuth" runat="server"></asp:Label>
       </div>
@@ -36,64 +40,78 @@
     <%-- PANEL: SOLICITUD PENDIENTE --%>
     <asp:Panel ID="pnlPendiente" runat="server" Visible="false" CssClass="text-center py-5">
       <div class="spinner-border text-warning" role="status" style="width:3rem;height:3rem;"></div>
-      <h3 class="mt-3 text-warning">Voucher en Verificación</h3>
-      <p class="lead">Hemos recibido tu documento. El administrador validará el pago y confirmará tu matrícula.</p>
+
+      <h3 class="mt-3 text-warning">Solicitud en verificación</h3>
+      <p class="lead">Hemos recibido tu solicitud. El administrador validará la información y confirmará tu matrícula.</p>
+
       <div class="badge badge-secondary p-2">Estado: Pendiente de Confirmación</div>
     </asp:Panel>
 
-    <%-- PANEL: SUBIR VOUCHER --%>
+    <%-- PANEL: MATRÍCULA --%>
     <asp:Panel ID="pnlVoucher" runat="server" Visible="false">
 
       <%-- Info del alumno --%>
       <div class="alert alert-info">
         <i class="fas fa-info-circle"></i>
-        <strong>Estado:</strong> 
-        <asp:Label ID="lblEstado" runat="server"></asp:Label> &nbsp;|&nbsp;
-        <strong>Idioma:</strong> 
-        <asp:Label ID="lblIdioma" runat="server"></asp:Label> &nbsp;|&nbsp;
-        <strong>Nivel:</strong> 
-        <asp:Label ID="lblNivel" runat="server"></asp:Label> &nbsp;|&nbsp;
-        <strong>Ciclo a matricular:</strong> 
+
+        <strong>Estado:</strong>
+        <asp:Label ID="lblEstado" runat="server"></asp:Label>
+        &nbsp;|&nbsp;
+
+        <strong>Idioma:</strong>
+        <asp:Label ID="lblIdioma" runat="server"></asp:Label>
+        &nbsp;|&nbsp;
+
+        <strong>Nivel:</strong>
+        <asp:Label ID="lblNivel" runat="server"></asp:Label>
+        &nbsp;|&nbsp;
+
+        <strong>Ciclo a matricular:</strong>
         <asp:Label ID="lblCiclo" runat="server"></asp:Label>
       </div>
 
       <%-- Paso 1: Seleccionar grupo --%>
       <div class="alert alert-primary">
-        <i class="fas fa-users"></i> <strong>Paso 1:</strong> Selecciona tu grupo
+        <i class="fas fa-users"></i>
+        <strong>Paso 1:</strong> Selecciona tu grupo
       </div>
+
       <div class="form-group">
-        <asp:DropDownList ID="ddlGrupos" runat="server" CssClass="form-control" 
-            DataValueField="idGrupo" DataTextField="descripcion">
+        <asp:DropDownList ID="ddlGrupos" runat="server"
+            CssClass="form-control"
+            DataValueField="idGrupo"
+            DataTextField="descripcion">
         </asp:DropDownList>
+
         <small class="text-muted">
           <asp:Label ID="lblVacantes" runat="server"></asp:Label>
         </small>
       </div>
 
-      <%-- Paso 2: Subir voucher --%>
-      <div class="alert alert-primary mt-3">
-        <i class="fas fa-upload"></i> <strong>Paso 2:</strong> Sube tu comprobante de pago
-      </div>
-      <div class="form-group p-4 text-center border" 
-           style="border-style:dashed !important; background:#f8fafc;">
-        <label class="d-block mb-2">Selecciona imagen o PDF del voucher (JPG, PNG, PDF):</label>
-        <asp:FileUpload ID="fuVoucher" runat="server" CssClass="form-control-file d-inline-block" />
-        <br/>
-        <small class="text-muted">Tamaño máximo: 5MB</small>
-      </div>
-
       <%-- Número de recibo --%>
       <div class="form-group">
-        <label><i class="fas fa-receipt"></i> Número de recibo (opcional, referencial):</label>
-        <asp:TextBox ID="txtNumeroRecibo" runat="server" CssClass="form-control" 
-            placeholder="Ej: 87788-PP" MaxLength="50"></asp:TextBox>
+        <label>
+          <i class="fas fa-receipt"></i>
+          Número de recibo (opcional, referencial):
+        </label>
+
+        <asp:TextBox ID="txtNumeroRecibo" runat="server"
+            CssClass="form-control"
+            placeholder="Ej: 87788-PP"
+            MaxLength="50">
+        </asp:TextBox>
       </div>
 
       <%-- Mensaje de error --%>
-      <asp:Label ID="lblError" runat="server" CssClass="text-danger d-block mb-2"></asp:Label>
+      <asp:Label ID="lblError" runat="server"
+          CssClass="text-danger d-block mb-2">
+      </asp:Label>
 
-      <asp:Button ID="btnSubir" runat="server" Text="Enviar Solicitud de Matrícula"
-          CssClass="btn btn-primary btn-lg btn-block" OnClick="btnSubir_Click" />
+      <asp:Button ID="btnSubir" runat="server"
+          Text="Enviar Solicitud de Matrícula"
+          CssClass="btn btn-primary btn-lg btn-block"
+          OnClick="btnSubir_Click" />
+
     </asp:Panel>
 
     <%-- PANEL: ERROR / SIN DATOS --%>

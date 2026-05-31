@@ -19,3 +19,40 @@
     border-radius: 20px;
     box-shadow: 3px 3px 7px #868686;
 }
+/* Este contenedor mantendrá la tarjeta blanca con un tamaño fijo y congelado */
+.avisos-contenedor-card {
+    max-width: 100% !important;
+    height: 300px !important; /* 👈 Esto congela el tamaño de la tarjeta blanca */
+    max-height: 300px !important; /* 👈 Garantiza que NUNCA se va a agrandar hacia abajo */
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Esta es la zona interna que activa la ruedita del mouse para bajar */
+.avisos-scroll-zona {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow-y: auto !important; /* 👈 Activa el "bajar para ver más" de forma interna */
+    overflow-x: hidden !important; /* Evita el movimiento hacia los lados */
+    flex-grow: 1 !important;
+    padding-right: 4px; /* Espacio para que la barra no choque con la fecha */
+}
+
+    /* Estilizado fino para que la barra de scroll se vea sutil y moderna */
+    .avisos-scroll-zona::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .avisos-scroll-zona::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .avisos-scroll-zona::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 10px;
+    }
+
+        .avisos-scroll-zona::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
