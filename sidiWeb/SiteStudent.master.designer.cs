@@ -42,13 +42,13 @@ namespace sidiWeb
         protected global::System.Web.UI.WebControls.LinkButton btnCerrarSesion;
 
         /// <summary>
-        /// Control LinkButton1.
+        /// Control btnInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton btnInicio;
 
         /// <summary>
         /// Control btnGrupo.
@@ -60,13 +60,13 @@ namespace sidiWeb
         protected global::System.Web.UI.WebControls.LinkButton btnGrupo;
 
         /// <summary>
-        /// Control LinkButton4.
+        /// Control btnAsistencias.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton btnAsistencias;
 
         /// <summary>
         /// Control btnPagos.
@@ -78,13 +78,13 @@ namespace sidiWeb
         protected global::System.Web.UI.WebControls.LinkButton btnPagos;
 
         /// <summary>
-        /// Control LinkButton3.
+        /// Control btnRecursos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton btnRecursos;
 
         /// <summary>
         /// Control btnPerfil.

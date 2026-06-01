@@ -8,7 +8,7 @@
 
 <%-- 2. CONTENEDOR PRINCIPAL (Estructura Responsiva) --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container py-4">
+    <div class="container py-4 main-resources-container">
         
         <div class="row mb-4">
             <div class="col-12">
@@ -17,17 +17,17 @@
             </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 align-items-start">
             
             <%-- Columna 1: Aulas Virtuales --%>
             <div class="col-lg-4 col-md-6">
-                <div class="card dashboard-card h-100 p-3">
-                    <div class="card-body">
-                        <h5 class="card-title-custom mb-3">
-                            <i class="fas fa-laptop-code me-2 text-primary"></i>Aulas Virtuales
-                        </h5>
-                        <p class="text-muted small mb-4">Portales interactivos para el desarrollo de tus clases cotidianas.</p>
-                        
+                <div class="card resources-profile-card p-4">
+                    <h5 class="card-title-custom mb-3">
+                        <i class="fas fa-laptop-code me-2 text-primary"></i>Aulas Virtuales
+                    </h5>
+                    <p class="text-muted small mb-4">Portales interactivos para el desarrollo de tus clases cotidianas.</p>
+                    
+                    <div class="info-group-resource">
                         <a href="https://learn.eltngl.com/" target="_blank" class="text-decoration-none text-dark">
                             <div class="resource-item d-flex align-items-center p-3 mb-3">
                                 <div class="icon-box bg-spark me-3">
@@ -59,13 +59,13 @@
 
             <%-- Columna 2: Proceso de Matrícula --%>
             <div class="col-lg-4 col-md-6">
-                <div class="card dashboard-card h-100 p-3">
-                    <div class="card-body">
-                        <h5 class="card-title-custom mb-3">
-                            <i class="fas fa-user-check me-2 text-purple"></i>Proceso de Matrícula
-                        </h5>
-                        <p class="text-muted small mb-4">Enlaces obligatorios para asegurar y registrar tu cupo del próximo ciclo.</p>
+                <div class="card resources-profile-card p-4">
+                    <h5 class="card-title-custom mb-3">
+                        <i class="fas fa-user-check me-2 text-purple"></i>Proceso de Matrícula
+                    </h5>
+                    <p class="text-muted small mb-4">Enlaces obligatorios para asegurar y registrar tu cupo del próximo ciclo.</p>
 
+                    <div class="info-group-resource">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmf-mbKTWDL2MTBaBnTtSDB51ZRfhs3sB9udMYiMWej-VLZw/viewform" target="_blank" class="text-decoration-none text-dark">
                             <div class="resource-item d-flex align-items-center p-3 mb-3">
                                 <div class="icon-box bg-fumidi me-3">
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <h6 class="mb-0 fw-semibold text-secondary">Trámite del Libro</h6>
-                                    <small class="text-muted">Tramite y reporte de Problemas de Libro</small>
+                                    <small class="text-muted">Tramite y reporte de problemas</small>
                                 </div>
                                 <i class="fas fa-chevron-right text-muted small"></i>
                             </div>
@@ -97,71 +97,71 @@
 
             <%-- Columna 3: Trámites y Formulación --%>
             <div class="col-lg-4 col-md-12">
-                <div class="card dashboard-card h-100 p-3">
-                    <div class="card-body">
-                        <h5 class="card-title-custom mb-3">
-                            <i class="fas fa-file-invoice me-2 text-success"></i>Trámites y Formulación
-                        </h5>
-                        <p class="text-muted small mb-4">Justificación de inasistencias y descargas de plantillas administrativas.</p>
+                <div class="card resources-profile-card p-4">
+                    <h5 class="card-title-custom mb-3">
+                        <i class="fas fa-file-invoice me-2 text-success"></i>Trámites y Formulación
+                    </h5>
+                    <p class="text-muted small mb-4">Justificación de inasistencias y descargas de plantillas administrativas.</p>
 
+                    <div class="info-group-resource">
                         <div class="resource-item p-3">
-                            <div class="d-flex align-items-center mb-2 collapse-trigger" data-bs-toggle="collapse" data-bs-target="#collapseFormatos">
+                            <div class="d-flex align-items-center mb-2 collapse-trigger" data-bs-toggle="collapse" data-bs-target="#collapseFormatos" style="cursor: pointer;">
                                 <div class="icon-box bg-formatos me-3">
                                     <i class="fas fa-file-pdf"></i>
                                 </div>
                                 <div class="flex-grow-1">
                                     <h6 class="mb-0 fw-semibold text-secondary">Justificación de Inasistencias (FUT)</h6>
-                                    <small class="text-muted">Descargar formatos, ver requisitos y costos</small>
+                                    <small class="text-muted">Formatos, requisitos y costos</small>
                                 </div>
                                 <i class="fas fa-chevron-down text-muted small"></i>
                             </div>
                             
                             <div class="collapse mt-3" id="collapseFormatos">
-                                <div class="ps-4 mb-3">
-                                    <p class="text-xs text-uppercase fw-bold text-muted tracking-wider mb-2 section-subtitle">Documentos para Descargar:</p>
+                                <div class="ps-2 mb-3">
+                                    <p class="text-uppercase fw-bold text-muted mb-2" style="font-size: 0.75rem; letter-spacing: 0.5px;">Documentos para Descargar:</p>
                                     <ul class="list-unstyled small mb-0">
                                         <li class="py-2 border-bottom">
                                             <a href="https://drive.google.com/file/d/1KsL6YzSF74i2dg3d5iYE8W3LYQWPibu2/view?usp=sharing" target="_blank" class="text-decoration-none text-secondary d-flex justify-content-between align-items-center">
-                                                <span><i class="far fa-file-alt me-2 text-danger"></i> FUT Oficial (Dirigido a Dirección)</span>
-                                                <i class="fas fa-external-link-alt text-muted xs-icon"></i>
+                                                <span><i class="far fa-file-alt me-2 text-danger"></i> FUT Oficial (Dirección)</span>
+                                                <i class="fas fa-external-link-alt text-muted" style="font-size: 0.75rem;"></i>
                                             </a>
                                         </li>
                                         <li class="py-2 border-bottom">
                                             <a href="https://drive.google.com/file/d/1j1eHGd-naG8nQ7QDtKQ_pJxLjZLtiOER/view?usp=sharing" target="_blank" class="text-decoration-none text-secondary d-flex justify-content-between align-items-center">
                                                 <span><i class="far fa-file-alt me-2 text-danger"></i> Anexo 2</span>
-                                                <i class="fas fa-external-link-alt text-muted xs-icon"></i>
+                                                <i class="fas fa-external-link-alt text-muted" style="font-size: 0.75rem;"></i>
                                             </a>
                                         </li>
                                         <li class="py-2 border-bottom mb-2">
                                             <a href="https://drive.google.com/file/d/15PG7JxtUkcnwaKAt4gKrbC9jCLP6PgW7/view?usp=sharing" target="_blank" class="text-decoration-none text-secondary d-flex justify-content-between align-items-center">
                                                 <span><i class="far fa-file-pdf me-2 text-warning"></i> Modelo de Llenado</span>
-                                                <i class="fas fa-external-link-alt text-muted xs-icon"></i>
+                                                <i class="fas fa-external-link-alt text-muted" style="font-size: 0.75rem;"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="p-3 bg-light rounded-3 border mx-2 panel-requisitos">
+                                <div class="p-3 bg-light rounded-3 border panel-requisitos">
                                     <div class="d-flex align-items-center mb-2">
                                         <i class="fas fa-info-circle text-primary me-2"></i>
-                                        <strong class="text-dark">Requisitos del Expediente:</strong>
+                                        <strong class="text-dark small">Requisitos del Expediente:</strong>
                                     </div>
-                                    <ul class="ps-3 mb-3 text-secondary small">
+                                    <ul class="ps-3 mb-3 text-secondary" style="font-size: 0.8rem;">
                                         <li>FUT relleno, Copia de DNI y Sustento de inasistencia.</li>
-                                        <li>Derecho de trámite (<strong>Tributo 586 - El pago se puede realizar en el Banco de la Nación, Pagalo.pe o Caja de la UNJFSC</strong>).</li>
+                                        <li>Derecho de trámite (<strong>Tributo 586 - Banco de la Nación, Pagalo.pe o Caja UNJFSC</strong>).</li>
                                     </ul>
 
                                     <div class="row g-2 mb-3 text-center">
                                         <div class="col-6">
-                                            <div class="p-2 rounded-2 price-box faustiniano">
-                                                <small class="text-muted d-block sub-text">Faustiniano</small>
-                                                <span class="fw-bold text-warning price-value">S/. 1.00</span>
+                                            <div class="p-2 rounded-2 bg-white border">
+                                                <small class="text-muted d-block" style="font-size: 0.7rem;">Faustiniano</small>
+                                                <span class="fw-bold text-success" style="font-size: 0.85rem;">S/. 1.00</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="p-2 rounded-2 price-box general">
-                                                <small class="text-muted d-block sub-text">Público General</small>
-                                                <span class="fw-bold text-secondary price-value">S/. 5.00</span>
+                                            <div class="p-2 rounded-2 bg-white border">
+                                                <small class="text-muted d-block" style="font-size: 0.7rem;">Público General</small>
+                                                <span class="fw-bold text-secondary" style="font-size: 0.85rem;">S/. 5.00</span>
                                             </div>
                                         </div>
                                     </div>
@@ -172,8 +172,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
 
