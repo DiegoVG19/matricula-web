@@ -331,7 +331,7 @@
                     </div>
                     <div>
                         <span class="d-block fw-bold text-dark small">WhatsApp Matrículas</span>
-                        <a href="https://wa.me/51987654321" target="_blank" class="text-decoration-none small text-success fw-semibold">+51 987 654 321</a>
+                        <a href="https://wa.me/51987654321" target="_blank" class="text-decoration-none small text-success fw-semibold">+51 953 813 572</a>
                     </div>
                 </div>
 
@@ -341,7 +341,7 @@
                     </div>
                     <div>
                         <span class="d-block fw-bold text-dark small">Mesa de Ayuda</span>
-                        <span class="text-muted small" style="font-size: 0.85rem;">soporte_idiomas@unjfsc.edu.pe</span>
+                        <span class="text-muted small" style="font-size: 0.85rem;">idiomas@unjfsc.edu.pe</span>
                     </div>
                 </div>
             </div>
