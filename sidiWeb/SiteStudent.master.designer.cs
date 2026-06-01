@@ -96,13 +96,13 @@ namespace sidiWeb
         protected global::System.Web.UI.WebControls.LinkButton btnPerfil;
 
         /// <summary>
-        /// Control lnkMatricula.
+        /// Control Content2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkMatricula;
+        protected global::System.Web.UI.WebControls.LinkButton Content2;
 
         /// <summary>
         /// Control MainContent.

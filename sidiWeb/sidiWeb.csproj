@@ -245,6 +245,13 @@
     <Compile Include="student\recursos.aspx.designer.cs">
       <DependentUpon>recursos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\Ayuda.aspx.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\Ayuda.aspx.designer.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\silabo.aspx.cs">
       <DependentUpon>silabo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +289,7 @@
     <Content Include="Resources\inicioStudent.css" />
     <Content Include="Resources\paginacion.css" />
     <Content Include="Resources\perfilStudent.css" />
+    <Content Include="Resources\ayuda.css" />
     <Content Include="Resources\recursos.css" />
     <Content Include="Resources\elementosComunes.css" />
     <Content Include="student\detallegrupo.aspx" />
@@ -318,6 +326,7 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="student\recordasis.aspx" />
     <Content Include="student\recursos.aspx" />
+    <Content Include="student\Ayuda.aspx" />
     <Content Include="student\silabo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

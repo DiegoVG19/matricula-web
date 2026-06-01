@@ -93,5 +93,10 @@ namespace sidiWeb
             // Redirecciona al estudiante a la nueva interfaz de recursos
             Response.Redirect("~/student/recursos.aspx");
         }
+        protected void btnVerAyuda_Click(object sender, EventArgs e)
+        {
+            // Redirecciona al estudiante a la nueva interfaz de ayuda
+            Response.Redirect("~/student/ayuda.aspx");
+        }
     }
 }
