@@ -9,7 +9,7 @@ namespace sidiWeb.student
     public partial class matricula : System.Web.UI.Page
     {
         private string ConnStr =>
-            ConfigurationManager.ConnectionStrings["BDCHISTEMAS"].ConnectionString;
+            ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
 
         private int IdAlumno
         {
@@ -48,6 +48,7 @@ namespace sidiWeb.student
                 Response.Redirect("~/login.aspx");
                 return;
             }
+            /*
 
             IdAlumno = Convert.ToInt32(Session["UserId"]);
 
@@ -56,6 +57,8 @@ namespace sidiWeb.student
                 CargarNombreAlumno();
                 VerificarEstado();
             }
+            */
+            pnlVoucher.Visible = true;
         }
 
         private void CargarNombreAlumno()

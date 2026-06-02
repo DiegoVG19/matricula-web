@@ -3,21 +3,42 @@
     Inherits="sidiWeb.student.matricula" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="../Content/matricula.css" rel="stylesheet" />
+    <script src="../Scripts/matricula.js"></script>
 <div class="container mt-4">
   <div class="card shadow-sm p-4" style="border-radius:15px;">
 
-    <h2 class="text-primary">
-      <i class="fas fa-graduation-cap"></i> MATRÍCULA VIRTUAL
-    </h2>
-
-    <p class="text-muted">
-      Estudiante:
-      <strong>
-        <asp:Label ID="lblNombreAlumno" runat="server" Text=""></asp:Label>
-      </strong>
-    </p>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="text-primary mb-0">
+        <i class="fas fa-graduation-cap"></i> MATRÍCULA VIRTUAL
+      </h2>
+      
+      <div>
+        <asp:Label ID="lblNombreAlumno" runat="server" CssClass="fw-bold text-secondary me-3"></asp:Label>
+        <asp:LinkButton ID="btnExportarPDF" runat="server" CssClass="btn btn-outline-primary" OnClientClick="exportarTablaPDF(); return false;">
+          <i class="fas fa-file-pdf"></i> Exportar a PDF
+        </asp:LinkButton>
+      </div>
+    </div>
 
     <hr />
+
+    <%-- TABLA DE INFORMACIÓN ACADÉMICA --%>
+    <div class="table-responsive mb-4">
+      <table class="table table-bordered table-hover" id="tablaMatricula">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Idioma</th>
+            <th scope="col">Ciclo</th>
+            <th scope="col">Nivel</th>
+            <th scope="col">Vez</th>
+          </tr>
+        </thead>
+        <tbody>
+          <asp:Literal ID="litFilasTabla" runat="server"></asp:Literal>
+        </tbody>
+      </table>
+    </div>
 
     <%-- PANEL: YA MATRICULADO --%>
     <asp:Panel ID="pnlYaMatriculado" runat="server" Visible="false" CssClass="text-center py-5">
