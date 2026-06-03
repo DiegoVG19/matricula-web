@@ -11,7 +11,6 @@ namespace sidiWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Verificar si el usuario está autenticado
             if (Session["UserId"] == null)
             {
                 Response.Redirect("/");
@@ -26,17 +25,10 @@ namespace sidiWeb
 
         protected void btnCambiarContra_Click(object sender, EventArgs e)
         {
-            //
-            /*Panel para cambio de contraseña
-             Verificacion de contraseña anterior
-            Dos veces
-            Nueva contra
-            Boton de acpetar*/
         }
 
         protected void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            // Limpiar la sesión
             Session.Clear();
             Session.Abandon();
 
@@ -45,7 +37,6 @@ namespace sidiWeb
                 Response.Cookies["YourAuthCookie"].Expires = DateTime.Now.AddDays(-1);
             }
 
-            // Redirigir a la página de inicio de sesión
             Response.Redirect("/");
         }
 
@@ -68,34 +59,34 @@ namespace sidiWeb
         {
             Response.Redirect("~/student/pagos.aspx");
         }
+
         protected void btnMatricula_Click(object sender, EventArgs e)
         {
-            
             Response.Redirect("matricula.aspx");
         }
+
         protected void btnSilabo_Click(object sender, EventArgs e)
         {
-
             Response.Redirect("silabo.aspx");
         }
+
         protected void btnPagalo_Click(object sender, EventArgs e)
         {
-
             Response.Redirect("pagalo.aspx");
         }
-        protected void btnRecordAsis_Click (object sender, EventArgs e)
+
+        protected void btnRecordAsis_Click(object sender, EventArgs e)
         {
             Response.Redirect("recordasis.aspx");
-           
         }
+
         protected void btnrecursos_Click(object sender, EventArgs e)
         {
-            // Redirecciona al estudiante a la nueva interfaz de recursos
             Response.Redirect("~/student/recursos.aspx");
         }
+
         protected void btnVerAyuda_Click(object sender, EventArgs e)
         {
-            // Redirecciona al estudiante a la nueva interfaz de ayuda
             Response.Redirect("~/student/ayuda.aspx");
         }
     }

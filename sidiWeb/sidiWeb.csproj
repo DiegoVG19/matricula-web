@@ -148,12 +148,20 @@
     <Compile Include="instructor\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="SiteAdministrative.master.cs">
       <DependentUpon>SiteAdministrative.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SiteAdministrative.master.designer.cs">
       <DependentUpon>SiteAdministrative.master</DependentUpon>
+    </Compile>
+    <Compile Include="student\Ayuda.aspx.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\Ayuda.aspx.designer.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\detallegrupo.aspx.cs">
       <DependentUpon>detallegrupo.aspx</DependentUpon>
@@ -179,13 +187,6 @@
     <Compile Include="student\grupos.aspx.designer.cs">
       <DependentUpon>grupos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="student\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="student\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,12 +194,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\inicioStudent.aspx.cs">
+      <DependentUpon>inicioStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\inicioStudent.aspx.designer.cs">
+      <DependentUpon>inicioStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\matricula.aspx.cs">
       <DependentUpon>matricula.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="student\matricula.aspx.designer.cs">
       <DependentUpon>matricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\matriculaNueva.aspx.cs">
+      <DependentUpon>matriculaNueva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\matriculaNueva.aspx.designer.cs">
+      <DependentUpon>matriculaNueva.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\pagalo.aspx.cs">
       <DependentUpon>pagalo.aspx</DependentUpon>
@@ -214,13 +229,6 @@
     <Compile Include="student\pagos.aspx.designer.cs">
       <DependentUpon>pagos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="student\perfil.aspx.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="student\perfil.aspx.designer.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteStudent.master.cs">
       <DependentUpon>SiteStudent.master</DependentUpon>
@@ -228,6 +236,13 @@
     </Compile>
     <Compile Include="SiteStudent.master.designer.cs">
       <DependentUpon>SiteStudent.master</DependentUpon>
+    </Compile>
+    <Compile Include="student\perfilStudent.aspx.cs">
+      <DependentUpon>perfilStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\perfilStudent.aspx.designer.cs">
+      <DependentUpon>perfilStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\recordasis.aspx.cs">
       <DependentUpon>recordasis.aspx</DependentUpon>
@@ -254,6 +269,8 @@
   <ItemGroup>
     <Content Include="administrative\index.aspx" />
     <Content Include="administrative\resumenalumnos.aspx" />
+    <Content Include="bin\sidiWeb.dll" />
+    <Content Include="bin\sidiWeb.pdb" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -271,27 +288,31 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\matricula.css" />
+    <Content Include="img\diseño-perfil.jpg" />
     <Content Include="img\INTRANET.JPG" />
     <Content Include="img\logo-instituto-idiomas.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\prueba-foto-perfil.png" />
     <Content Include="instructor\index.aspx" />
+    <Content Include="obj\Debug\sidiWeb.csproj.FileListAbsolute.txt" />
     <Content Include="Resources\adminStyles.css" />
     <Content Include="Resources\paginacion.css" />
     <Content Include="Resources\perfilStudent.css" />
     <Content Include="Resources\recursos.css" />
     <Content Include="Scripts\matricula.js" />
+    <Content Include="student\Ayuda.aspx" />
     <Content Include="student\detallegrupo.aspx" />
     <Content Include="error404.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="student\grupos.aspx" />
-    <Content Include="student\index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="student\inicioStudent.aspx" />
     <Content Include="student\matricula.aspx" />
+    <Content Include="student\matriculaNueva.aspx" />
     <Content Include="student\pagalo.aspx" />
     <Content Include="student\pagos.aspx" />
-    <Content Include="student\perfil.aspx" />
     <Content Include="Resources\err.css" />
     <Content Include="Resources\studentStyles.css" />
     <Content Include="Resources\loginStyles.css" />
@@ -301,6 +322,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include=".vs\sidiWeb.csproj.dtbcache.json" />
+    <Content Include="App_Data\config_aviso.csv" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\sidiWeb.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\sidiWeb.csproj.CoreCompileInputs.cache" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -312,6 +339,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="student\perfilStudent.aspx" />
     <Content Include="student\recordasis.aspx" />
     <Content Include="student\recursos.aspx" />
     <Content Include="student\silabo.aspx" />
@@ -333,8 +361,8 @@
     <Content Include="SiteAdministrative.master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
