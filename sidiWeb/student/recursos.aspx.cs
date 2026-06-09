@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace sidiWeb.student
 {
@@ -6,11 +11,6 @@ namespace sidiWeb.student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Aquí puedes verificar si el alumno ha iniciado sesión antes de mostrar los recursos
-            if (!IsPostBack)
-            {
-                // Lógica de carga inicial si fuera necesaria
-            }
         }
     }
 }
