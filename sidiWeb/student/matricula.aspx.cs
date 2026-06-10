@@ -7,13 +7,25 @@ namespace sidiWeb.student
 {
     public partial class matricula : System.Web.UI.Page
     {
+       
+        protected void btnIniciarMatricula_Click(object sender, EventArgs e)
+        {
+            // Redirige al estudiante al formulario real de matrícula
+            Response.Redirect("formMatricula.aspx");
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-            // AQUÍ ESTABA EL ERROR: 
-            // Esto estaba vacío. Ahora forzará la carga de datos al iniciar.
             if (!IsPostBack)
             {
                 CargarTablaMatricula();
+
+                // LÓGICA FUTURA: 
+                // bool cicloTerminado = VerificarBaseDeDatos();
+                // if (cicloTerminado) 
+                // {
+                //     string script = "var miModal = new bootstrap.Modal(document.getElementById('modalAvisoMatricula')); miModal.show();";
+                //     ScriptManager.RegisterStartupScript(this, GetType(), "AbrirModalMatricula", script, true);
+                // }
             }
         }
 
