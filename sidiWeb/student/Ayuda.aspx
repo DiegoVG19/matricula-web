@@ -19,7 +19,7 @@
         <!-- SECCIÓN DE PREGUNTAS Y REGLAMENTOS -->
         <div class="col-lg-8">
             <div class="card profile-info p-4 h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                <h5 class="fw-bold mb-4 text-dark border-bottom pb-2">
+                <h5 class="fw-bold mb-4 text-dark border-bottom pb-2">  
                     <i class="fa-solid fa-book-bookmark text-primary me-2"></i>Guía Informativa Institucional
                 </h5>
                 

@@ -63,12 +63,14 @@
                     <% } %>
                 </div>
             </div>
-            <div class="card col-lg-4 col-sm-12 p-3 shadow-sm" style="max-height: 220px !important; box-sizing: border-box;">
-                <h5 class="card-title mb-3 fw-bold text-secondary">Recursos Rápidos</h5>
-                <div class="text-muted" style="font-size: 0.85rem;">
-                    Aquí van los enlaces rápidos de tus compañeros...
-                </div>
-            </div>
+           <div class="card col-lg-4 col-sm-12 p-3 shadow-sm" style="max-height: 220px !important; box-sizing: border-box;">
+    <h5 class="card-title mb-3 fw-bold text-secondary">Recursos Rápidos</h5>
+    <div class="text-muted" style="font-size: 0.85rem;">
+        <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" class="text-primary fw-bold text-decoration-none" target="_blank">
+            Ir al Aula Virtual - Instituto de Idiomas
+        </a>
+    </div>
+</div>
 
         </div>
     </div>
