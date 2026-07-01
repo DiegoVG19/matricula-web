@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/Resources/perfilStudent.css">
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-        <div class="d-flex flex-sm-column flex-lg-row h-100 center-x gap-4">
+        <div class="d-flex flex-sm-column flex-lg-row h-100 gap-4">
             <div class="profile-header d-flex card center-x center-y gap-4">
 
                 <%--<div class="profile-photo-container">--%>
@@ -22,67 +22,82 @@
                 </asp:Label>
 
                 <asp:LinkButton ID="btnEditarPerfil" runat="server"
-                    CssClass="btn btn-outline-primary custom-btn text-white" OnClick="btnActivarCampos_Click">
+                    CssClass="btn btn-2 fw-bold col-6 btn-animated" OnClick="btnActivarCampos_Click">
                     <i class="fas fa-pencil"></i> Editar Perfil
                 </asp:LinkButton>
             </div>
 
-            <div class=" card profile-info h-75">
-                <div class="row">
-                    <div class="col-md-6">
+            <div class=" card profile-info col-lg-4 col-sm-12">
+                <div class="row h-100">
+                    <div class="col-md-12">
+                        <span class="card-title mb-3 fw-bold text-secondary">Información Personal</span>
                         <div class="info-group">
-                            <div class="info-label">N° CARNET</div>
-
-                            <asp:Label ID="lblNCarnet" runat="server" class="info-value fw-bold">IXXXXXXXX</asp:Label>
-
+                            <div class="info-label fw-bold">N° CARNET</div>
+                            <div class="w-100">
+                            <asp:Label ID="lblNCarnet" runat="server" CssClass="info-value w-100">IXXXXXXXX</asp:Label>
+                                </div>
                         </div>
                         <div class="info-group">
-                            <div class="info-label">Correo electrónico</div>
+                            <div class="info-label fw-bold">Correo electrónico</div>
+                            <div class="w-100">
                             <asp:TextBox ID="txtCorreo" runat="server" CssClass="info-value" Visible="false">
                                 correo@gmail.com</asp:TextBox>
                             <asp:Label ID="lblCorreo" runat="server" class="info-value">correo@gmail.com</asp:Label>
+                                </div>
                         </div>
                         <div class="info-group">
-                            <div class="info-label">Celular</div>
+                            <div class="info-label fw-bold">Celular</div>
+                            <div class="w-100">
                             <asp:TextBox ID="txtCelular" runat="server" class="info-value" Visible="false">987654321
                             </asp:TextBox>
                             <asp:Label ID="lblCelular" runat="server" class="info-value">987654321</asp:Label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-group">
-                            <div class="info-label">N° DNI </div>
-                            <asp:Label ID="lblDni" runat="server" class="info-value fw-bold"> 12345678</asp:Label>
-                            <div class="text-danger small fw-bold"> El numero de DNI es USUARIO y CONTRASEÑA para el
-                                aula
-                                virtual.</div>
+                                </div>
                         </div>
                         <div class="info-group">
-                            <div class="info-label">Fecha de nacimiento</div>
+                            <div class="info-label fw-bold">N° DNI </div>
+                            <div class="w-100 d-flex flex-column">
+                                <asp:Label ID="lblDni" runat="server" class="info-value"> 12345678</asp:Label>
+                                <div class="text-danger small fw-bold">
+                                    El numero de DNI es USUARIO y CONTRASEÑA para el aula virtual.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-group">
+                            <div class="info-label fw-bold">Fecha de nacimiento</div>
+                            <div class="w-100">
                             <asp:Label ID="lblNacimiento" runat="server" class="info-value">XX/XX/XX</asp:Label>
+                                </div>
                         </div>
                         <div class="info-group">
-                            <div class="info-label">Género</div>
+                            <div class="info-label fw-bold">Género</div>
+                            <div class="w-100">
                             <asp:Label ID="lblGenero" runat="server" class="info-value">INDEFINIDO</asp:Label>
+                                </div>
                         </div>
                         <div class="info-group">
-                            <div class="info-label">Tipo</div>
+                            <div class="info-label fw-bold  ">Tipo</div>
+                            <div class="w-100">
                             <asp:Label ID="lblTipo" runat="server" class="info-value">FAUSTINIANO/PARTICULAR</asp:Label>
+                                </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex flex-lg-row flex-column gap-2 justify-content-center">
-                    <asp:LinkButton ID="btnGuardarCambios" runat="server" CssClass="btn btn-primary" Visible="false"
-                        OnClick="btnGuardarCambios_Click">
-                        <i class="fa-solid fa-floppy-disk" style="margin-right:7px"></i>
+                
+                    <div class="d-flex flex-lg-row flex-column gap-2 justify-content-center w-100">
+                        <asp:LinkButton ID="btnGuardarCambios" runat="server" CssClass="btn btn-1 fw-bold btn-animated" Visible="false"
+                            OnClick="btnGuardarCambios_Click">
+                        <i class="fa-solid fa-floppy-disk"></i>
                         Guardar
-                    </asp:LinkButton>
-                    <asp:LinkButton ID="btnCancelar" runat="server" CssClass="btn btn-danger"
-                        OnClick="btnCancelar_Click" Visible="false">
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnCancelar" runat="server" CssClass="btn btn-danger fw-bold btn-animated"
+                            OnClick="btnCancelar_Click" Visible="false">
                         <i class="fa-solid fa-ban"></i>
                         Cancelar
-                    </asp:LinkButton>
+                        </asp:LinkButton>
+                    </div>
                 </div>
+            </div>
+            <div class="card col-lg-4 col-sm-12">
+                <span class="card-title mb-3 fw-bold text-secondary">Idiomas en Estudio</span>
             </div>
         </div>
 

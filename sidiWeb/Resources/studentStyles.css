@@ -4,6 +4,7 @@
 :root {
     --primary: #004175; /* Color oficial solicitado para barras y footer */
     --primary-dark: #002d52;
+    --secondary: #06589b;
     /*--primary-light: #e6f0fa;*/
     --primary-light: #e6f0fa;
     --bg-global: #f4f7f9;
@@ -22,11 +23,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-main);
     margin: 0;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 form {
@@ -41,15 +42,15 @@ form {
    ========================================================================== */
 .main-wrapper {
     width: 100%; /* ANCHO FIJO EXACTO */
-    height: 900px; /* ALTURA FIJA EXACTA PARA TODO EL CONTENEDOR */
-    min-height: 900px;
+    /*height: 900px;  ALTURA FIJA EXACTA PARA TODO EL CONTENEDOR */
+    min-height: 100vh;
     margin: 0 auto;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Evita que cualquier desborde rompa la caja */
+    /*overflow: hidden; Evita que cualquier desborde rompa la caja */
 }
 
 /* ==========================================================================
@@ -61,8 +62,9 @@ form {
     padding: 0 20px;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid var(--primary-dark);
+    border-bottom: 2px solid var(--border-color);
     flex-shrink: 0;
+    padding-left: 30px !important;
 }
 
     .top-navbar .navbar-brand img {
@@ -91,7 +93,7 @@ form {
     margin: 0 !important;
     width: 100%;
     display: flex;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Menú Lateral (Sidebar) con tamaño fijo */
@@ -142,12 +144,13 @@ form {
 .content-wrapper {
     background: #ffffff;
     padding: 25px;
-    width: calc(100% - 240px); /* Toma el ancho restante */
+    width:100%;
+    /* width: calc(100% - 240px); Toma el ancho restante */
     height: 100%; /* Rellena la altura fija de la caja */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Si hay mucha info genera scroll interno, si hay poca se queda estático */
+    /* Si hay mucha info genera scroll interno, si hay poca se queda estático */
 }
 
 /* ==========================================================================
@@ -224,9 +227,6 @@ form {
 /* ==========================================================================
    TABLA DE DATOS
    ========================================================================== */
-.profile-info {
-    width: 100%;
-}
 
 .info-table-container {
     width: 100%;
@@ -274,20 +274,7 @@ form {
     font-weight: 500;
 }
 
-/* Alerta de DNI */
-.text-danger.small {
-    margin-left: 12px;
-    font-size: 11px;
-    color: #b91c1c !important;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    background-color: #fef2f2;
-    border: 1px solid #fee2e2;
-    padding: 2px 8px;
-    border-radius: 3px;
-    height: 20px;
-}
+
 
 /* Inputs en edición */
 input.info-value-input {

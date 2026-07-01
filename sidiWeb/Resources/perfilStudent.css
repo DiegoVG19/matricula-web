@@ -2,11 +2,69 @@
     background-image: url("/img/diseño-perfil.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 480px;
-    height: 533px;
+    min-width: 355px;
+    height: 608px;
+}
+
+/* Alerta de DNI */
+.text-danger.small {
+    font-size: 11px;
+    color: #b91c1c !important;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    background-color: #fef2f2;
+    border: 1px solid #fee2e2;
+    padding: 2px 8px;
+    border-radius: 3px;
+    height: min-content;
 }
 
 .foto-perfil{
     object-fit: contain;
     width: 50%;
+}
+
+.info-group{
+    margin-bottom: 15px
+}
+
+.profile-info {
+    min-width: 300px;
+    /*width: min-content;*/
+    height: max-content;
+}
+
+.card-title{
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+.btn-1{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-1:hover{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.btn-animated:hover{
+    scale: 1.07;
+}
+
+.btn-2 {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-2:hover {
+    background-color:var(--primary);
+    color: #ffffff
+}
+
+.btn-edit-profile {
+    width: max-content;
 }

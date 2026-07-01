@@ -5,18 +5,18 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class=" container d-flex flex-column gap-3">
+    <div class="container-body d-flex flex-column gap-3">
         <div class="d-flex center-y flex-sm-column flex-lg-row gap-3">
             <div class="card col-lg-6 col-sm-12"><span>Bienvenid@, Ricardo Victorio</span></div>
             <div class="card col-lg-6 col-sm-12"><span>Próximas Clases</span></div>
         </div>
-        <div class="d-flex center-y flex-sm-column flex-lg-row gap-3">
+        <div class="d-flex center-y flex-sm-column flex-lg-row gap-3 w-100">
             <div class="card col-lg-6 col-sm-12"><span>Mis Cursos</span></div>
             <div class="card col-lg-6 col-sm-12"><span>Mi Progreso</span></div>
         </div>
         <div class="d-flex center-y flex-sm-column flex-lg-row gap-3 w-100">
 
-            <div class="card col-lg-8 col-sm-12 p-3 shadow-sm" style="max-height: 220px !important; display: flex; flex-direction: column; box-sizing: border-box;">
+            <div class="card col-lg-8 col-sm-12 p-3" style="max-height: 220px !important; display: flex; flex-direction: column; box-sizing: border-box;">
                 <h5 class="card-title mb-3 fw-bold text-secondary">Novedades y Avisos</h5>
 
                 <div class="d-flex flex-column gap-2" style="overflow-y: auto; overflow-x: hidden; flex-grow: 1; min-width: 0; padding-right: 4px;">
@@ -63,14 +63,13 @@
                     <% } %>
                 </div>
             </div>
-           <div class="card col-lg-4 col-sm-12 p-3 shadow-sm" style="max-height: 220px !important; box-sizing: border-box;">
-    <h5 class="card-title mb-3 fw-bold text-secondary">Recursos Rápidos</h5>
-    <div class="text-muted" style="font-size: 0.85rem;">
-        <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" class="text-primary fw-bold text-decoration-none" target="_blank">
-            Ir al Aula Virtual - Instituto de Idiomas
-        </a>
-    </div>
-</div>
+            <div class="card col-lg-4 col-sm-12 p-3">
+                <h5 class="card-title mb-3 fw-bold text-secondary">Recursos Rápidos</h5>
+                <div class="text-muted" style="font-size: 0.85rem;">
+                    <a href="https://aulainstitutoidiomas.unjfsc.edu.pe/login/index.php" class="text-primary fw-bold text-decoration-none" target="_blank">Ir al Aula Virtual - Instituto de Idiomas
+                    </a>
+                </div>
+            </div>
 
         </div>
     </div>

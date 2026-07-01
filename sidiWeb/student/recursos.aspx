@@ -2,7 +2,7 @@
     AutoEventWireup="true" CodeBehind="recursos.aspx.cs" Inherits="sidiWeb.student.recursos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="recursos.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="/Resources/recursos.css">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

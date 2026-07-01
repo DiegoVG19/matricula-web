@@ -19,6 +19,11 @@
     border-radius: 20px;
     box-shadow: 3px 3px 7px #868686;
 }
+
+.container-body {
+    flex: 1;
+    min-width: 0;
+}
 /* Este contenedor mantendrá la tarjeta blanca con un tamaño fijo y congelado */
 .avisos-contenedor-card {
     max-width: 100% !important;
