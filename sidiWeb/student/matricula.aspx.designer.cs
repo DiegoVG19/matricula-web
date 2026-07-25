@@ -24,30 +24,75 @@ namespace sidiWeb.student
         protected global::System.Web.UI.WebControls.Label lblNombreAlumno;
 
         /// <summary>
-        /// Control btnExportarPDF.
+        /// Control lblMensajeGeneral.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnExportarPDF;
+        protected global::System.Web.UI.WebControls.Label lblMensajeGeneral;
 
         /// <summary>
-        /// Control litFilasTabla.
+        /// Control phIdiomas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litFilasTabla;
+        protected global::System.Web.UI.WebControls.PlaceHolder phIdiomas;
 
         /// <summary>
-        /// Control btnIniciarMatricula.
+        /// Control pnlSinGrupos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnIniciarMatricula;
+        protected global::System.Web.UI.WebControls.Panel pnlSinGrupos;
+
+        /// <summary>
+        /// Control hfGrupoSeleccionado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfGrupoSeleccionado;
+
+        /// <summary>
+        /// Control btnConfirmar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmar;
+
+        /// <summary>
+        /// Control pnlResultadoSolicitud.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlResultadoSolicitud;
+
+        /// <summary>
+        /// Control hfResultadoTipo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfResultadoTipo;
+
+        /// <summary>
+        /// Control hfResultadoMensaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfResultadoMensaje;
     }
 }

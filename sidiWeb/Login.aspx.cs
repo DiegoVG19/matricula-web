@@ -36,7 +36,7 @@ namespace sidiWeb
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    switch(dr["tipo_usuario"].ToString())
+                    switch (dr["tipo_usuario"].ToString())
                     {
                         case "ADMINISTRADOR":
                         case "SECRETARIO":
@@ -44,12 +44,14 @@ namespace sidiWeb
                             Session["UserId"] = dr["idtrabajador"].ToString();
                             Response.Redirect("administrative/index.aspx");
                             break;
-                         case "PROFESOR":
+                        case "PROFESOR":
                             Session["UserId"] = dr["idtrabajador"].ToString();
                             Response.Redirect("instructor/teach.aspx");
                             break;
                         case "ESTUDIANTE":
                             Session["UserId"] = dr["idAlumno"].ToString();
+                            Session["IdAlumno"] = dr["idAlumno"].ToString();
+                            Session["Dni"] = txtUsuario.Text.Trim();
                             Response.Redirect("~/student/inicioStudent.aspx");
                             break;
                         default:
