@@ -141,7 +141,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Code\AlumnoApiResponse.cs" />
+    <Compile Include="Code\ApiPagosServices.cs" />
     <Compile Include="Code\ApiService.cs" />
+    <Compile Include="Code\ConceptoDTO.cs" />
+    <Compile Include="Code\OficinaDTO.cs" />
+    <Compile Include="Code\PagoApiResponse.cs" />
+    <Compile Include="Code\PagoDTO.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="instructor\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

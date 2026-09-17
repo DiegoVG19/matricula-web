@@ -1,10 +1,13 @@
-﻿using System;
+﻿using sidiWeb.Code.Api;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using sidiWeb.Code.Api;
+using System.Globalization;
 
 namespace sidiWeb.student
 {
@@ -41,37 +44,129 @@ namespace sidiWeb.student
             }
         }
 
+        private string ObtenerNivelPorTributo(string tributo)
+        {
+            string nivel = "";
+
+            string cadena = ConfigurationManager
+                .ConnectionStrings["dbSidi"]
+                .ConnectionString;
+
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                string sql = @"
+            SELECT 
+                i.nombreIdioma,
+                n.nombreNivel
+            FROM PrecioMatricula pm
+            INNER JOIN Idioma i
+                ON pm.idIdioma = i.idIdioma
+            INNER JOIN Nivel n
+                ON pm.idNivel = n.idNivel
+            WHERE pm.tributo = @tributo";
+
+
+                SqlCommand cmd = new SqlCommand(sql, cn);
+
+                cmd.Parameters.AddWithValue(
+                    "@tributo",
+                    tributo
+                );
+
+
+                cn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+
+                if (dr.Read())
+                {
+                    nivel =
+                        dr["nombreIdioma"].ToString()
+                        + " "
+                        +
+                        dr["nombreNivel"].ToString();
+                }
+            }
+
+            return nivel;
+        }
+
         private void loadPayments()
         {
-            string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
-            using (SqlConnection sqlConnection = new SqlConnection(connect))
+            string dni = Session["Dni"].ToString();
+
+            ApiPagosService api = new ApiPagosService();
+
+            PagoApiResponse respuesta = api.ObtenerPagos(dni);
+
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("IdPago", typeof(int));
+            dt.Columns.Add("Fech", typeof(DateTime));
+            dt.Columns.Add("Concepto");
+            dt.Columns.Add("Nivel");
+            dt.Columns.Add("Monto", typeof(decimal));
+            dt.Columns.Add("Recibo");
+
+            if (respuesta != null && respuesta.data != null)
             {
-                SqlCommand cmd = new SqlCommand("mostrar_relacion", sqlConnection)
+                foreach (var pago in respuesta.data)
                 {
-                    CommandType = CommandType.StoredProcedure
-                };
+                    DataRow row = dt.NewRow();
 
-                // Usamos la variable de clase userId
-                cmd.Parameters.Add(new SqlParameter("@cod", userId));
+                    row["IdPago"] = pago.identificador;
 
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+                    DateTime fecha;
 
-                DataView dv = dt.DefaultView;
+                    if (DateTime.TryParse(pago.fecha, out fecha))
+                        row["Fech"] = fecha;
+                    else
+                        row["Fech"] = DBNull.Value;
 
-                // Filtro de búsqueda por Recibo
-                if (!string.IsNullOrEmpty(txtSearchRecibo.Text))
-                {
-                    dv.RowFilter = string.Format("Recibo LIKE '%{0}%'", txtSearchRecibo.Text.Trim());
+                    string codigo = pago.concepto?.codigo ?? "";
+
+                    string tributo = codigo.Replace("TUS", "");
+
+
+                    if (tributo == "633")
+                    {
+                        // Pago antiguo
+                        row["Concepto"] = pago.concepto?.nombre ?? "";
+
+                        row["Nivel"] = "";
+                    }
+                    else
+                    {
+                        // Pago nuevo
+                        row["Concepto"] = tributo;
+
+                        row["Nivel"] = ObtenerNivelPorTributo(tributo);
+                    }
+
+
+                    row["Monto"] = pago.monto;
+
+
+                    row["Recibo"] = pago.transaccionId;
+
+                    dt.Rows.Add(row);
                 }
-
-                // Aplicar ordenamiento dinámico
-                dv.Sort = ViewState["SortExp"].ToString() + " " + ViewState["SortDir"].ToString();
-
-                gvPagos.DataSource = dv;
-                gvPagos.DataBind();
             }
+
+            DataView dv = dt.DefaultView;
+
+            if (!string.IsNullOrEmpty(txtSearchRecibo.Text))
+            {
+                dv.RowFilter = string.Format(
+                    "Recibo LIKE '%{0}%'",
+                    txtSearchRecibo.Text.Trim());
+            }
+
+            dv.Sort = ViewState["SortExp"] + " " + ViewState["SortDir"];
+
+            gvPagos.DataSource = dv;
+            gvPagos.DataBind();
         }
 
         // Evento para el buscador

@@ -77,8 +77,21 @@ namespace sidiWeb.student
 
                     int cicloACargar = habilitado ? ultimo.Ciclo + 1 : ultimo.Ciclo;
 
-                    if (!ExisteCicloEnNivel(idIdioma, ultimo.IdNivel, cicloACargar))
+                    bool existeSiguienteCiclo =
+                        ExisteCicloEnNivel(idIdioma, ultimo.IdNivel, cicloACargar);
+
+                    // NUEVO: indica si el idioma ya fue culminado
+                    bool idiomaCulminado = false;
+
+                    if (habilitado && !existeSiguienteCiclo)
+                    {
+                        idiomaCulminado = true;
+                    }
+                    else if (!existeSiguienteCiclo)
+                    {
+                        // Si no aprobó el último ciclo, permanece en el mismo
                         cicloACargar = ultimo.Ciclo;
+                    }
 
                     string mensajeCurso = "";
 
@@ -106,9 +119,13 @@ namespace sidiWeb.student
 "
                     });
 
-
-
-                    CargarTarjetasGrupos(idAlumno, idIdioma, ultimo.IdNivel, cicloACargar);
+                    CargarTarjetasGrupos(
+                        idAlumno,
+                        idIdioma,
+                        ultimo.IdNivel,
+                        cicloACargar,
+                        idiomaCulminado
+                    );
 
                     phIdiomas.Controls.Add(new Literal
                     {
@@ -123,98 +140,235 @@ namespace sidiWeb.student
             });
         }
 
-        private void CargarTarjetasGrupos(int idAlumno, int idIdioma, int idNivel, int ciclo)
+        private void CargarTarjetasGrupos(int idAlumno, int idIdioma, int idNivel, int ciclo, bool idiomaCulminado)
         {
+            // Obtener último grupo del alumno en este idioma
+            GrupoInfo ultimoGrupo = ObtenerUltimoGrupoAlumno(idAlumno, idIdioma);
+
+            EstadoReincorporacion estadoReincorporacion = null;
+
+
+            if (ultimoGrupo != null)
+            {
+                estadoReincorporacion =
+                    CalcularEstadoReincorporacion(ultimoGrupo.FechaFinal);
+
+
+                System.Diagnostics.Debug.WriteLine(
+                    "IDIOMA: " + idIdioma
+                );
+
+                System.Diagnostics.Debug.WriteLine(
+                    "ULTIMO GRUPO: " + ultimoGrupo.IdGrupo
+                );
+
+                System.Diagnostics.Debug.WriteLine(
+                    "FECHA FINAL: " + ultimoGrupo.FechaFinal
+                );
+
+                System.Diagnostics.Debug.WriteLine(
+                    "MESES INACTIVO: " + estadoReincorporacion.MesesInactivo
+                );
+
+                System.Diagnostics.Debug.WriteLine(
+                    "REINCORPORACION: " + estadoReincorporacion.RequiereReincorporacion
+                );
+
+                System.Diagnostics.Debug.WriteLine(
+                    "PERDIO PROGRESO: " + estadoReincorporacion.PerdioProgreso
+                );
+            }
+
+
+
             string connect = ConfigurationManager.ConnectionStrings["dbSidi"].ConnectionString;
+
 
             using (SqlConnection con = new SqlConnection(connect))
             {
-                SqlCommand cmd = new SqlCommand("obtener_grupos_disponibles_matricula", con);
+                SqlCommand cmd = new SqlCommand(
+                    "obtener_grupos_disponibles_matricula",
+                    con
+                );
+
                 cmd.CommandType = CommandType.StoredProcedure;
+
 
                 cmd.Parameters.AddWithValue("@idIdioma", idIdioma);
                 cmd.Parameters.AddWithValue("@idNivel", idNivel);
                 cmd.Parameters.AddWithValue("@ciclo", ciclo);
 
+
                 con.Open();
+
+
                 SqlDataReader dr = cmd.ExecuteReader();
+
 
                 StringBuilder disponibles = new StringBuilder();
                 StringBuilder enProceso = new StringBuilder();
                 StringBuilder opciones = new StringBuilder();
 
+
                 DateTime hoy = DateTime.Now;
+
                 bool hayGruposVigentes = false;
+
+
 
                 while (dr.Read())
                 {
-                    int idGrupo = Convert.ToInt32(dr["idGrupo"]);
-                    string codigoGrupo = dr["numero"]?.ToString() ?? "Sin código";
-                    int cicloGrupo = Convert.ToInt32(dr["ciclo"]);
-                    string dias = dr["diasClase"]?.ToString() ?? "Sin días";
+                    int idGrupo =
+                        Convert.ToInt32(dr["idGrupo"]);
 
-                    DateTime horaIni = Convert.ToDateTime(dr["horaInicio"]);
-                    DateTime horaFin = Convert.ToDateTime(dr["horaFinal"]);
-                    DateTime fechaInicio = Convert.ToDateTime(dr["fechaInicio"]);
-                    DateTime fechaFinal = Convert.ToDateTime(dr["fechaFinal"]);
 
-                    bool vigente = hoy.Date <= fechaFinal.Date;
-                    bool yaInicio = hoy.Date >= fechaInicio.Date;
+                    string codigoGrupo =
+                        dr["numero"]?.ToString()
+                        ?? "Sin código";
+
+
+                    int cicloGrupo =
+                        Convert.ToInt32(dr["ciclo"]);
+
+
+                    string dias =
+                        dr["diasClase"]?.ToString()
+                        ?? "Sin días";
+
+
+
+                    DateTime horaIni =
+                        Convert.ToDateTime(dr["horaInicio"]);
+
+
+                    DateTime horaFin =
+                        Convert.ToDateTime(dr["horaFinal"]);
+
+
+
+                    DateTime fechaInicio =
+                        Convert.ToDateTime(dr["fechaInicio"]);
+
+
+                    DateTime fechaFinal =
+                        Convert.ToDateTime(dr["fechaFinal"]);
+
+
+
+
+                    bool vigente =
+                        hoy.Date <= fechaFinal.Date;
+
+
+
+                    bool yaInicio =
+                        hoy.Date >= fechaInicio.Date;
+
+
 
                     if (!vigente)
                         continue;
 
+
+
                     hayGruposVigentes = true;
 
-                    string horario = $"{dias} {horaIni:hh:mm tt} - {horaFin:hh:mm tt}";
-                    string docente = dr["docente"]?.ToString() ?? "Por asignar";
-                    string modalidad = dr["modalidad"]?.ToString() ?? "";
+
+
+                    string horario =
+                        $"{dias} {horaIni:hh:mm tt} - {horaFin:hh:mm tt}";
+
+
+
+                    string docente =
+                        dr["docente"]?.ToString()
+                        ?? "Por asignar";
+
+
+
+                    string modalidad =
+                        dr["modalidad"]?.ToString()
+                        ?? "";
+
+
 
                     string iconoModalidad = "fas fa-desktop";
 
+
                     if (modalidad.ToUpper().Contains("PRESENCIAL"))
                         iconoModalidad = "fas fa-school";
+
                     else if (modalidad.ToUpper().Contains("VIRTUAL"))
                         iconoModalidad = "fas fa-desktop";
-                    else if (modalidad.ToUpper().Contains("CASA") || modalidad.ToUpper().Contains("REMOTO"))
+
+                    else if (
+                        modalidad.ToUpper().Contains("CASA") ||
+                        modalidad.ToUpper().Contains("REMOTO")
+                    )
                         iconoModalidad = "fas fa-home";
+
+
+
 
                     string tarjeta = $@"
 <div class='horario-card'>
+
     <div class='grupo-header'>
         {codigoGrupo} - Ciclo {cicloGrupo}
     </div>
 
+
     <div class='linea-info'>
         <i class='fas fa-clock'></i>
-        <span><strong>Horario:</strong> {horario}</span>
+        <span>
+            <strong>Horario:</strong> {horario}
+        </span>
     </div>
+
 
     <div class='linea-info'>
         <i class='fas fa-user'></i>
-        <span><strong>Docente:</strong> {docente}</span>
+        <span>
+            <strong>Docente:</strong> {docente}
+        </span>
     </div>
+
 
     <div class='linea-info'>
         <i class='{iconoModalidad}'></i>
-        <span><strong>Modalidad:</strong> {modalidad}</span>
+        <span>
+            <strong>Modalidad:</strong> {modalidad}
+        </span>
     </div>
+
 </div>";
+
+
 
                     if (yaInicio)
                         enProceso.Append(tarjeta);
                     else
                         disponibles.Append(tarjeta);
 
+
+
+
                     if (!YaEstaEnEsteCiclo(idAlumno, idIdioma, cicloGrupo))
                     {
-                        opciones.Append($@"<option value='{idGrupo}'>
+                        opciones.Append($@"
+<option value='{idGrupo}'>
 {codigoGrupo} | Ciclo {cicloGrupo} | {horario} | {modalidad}
 </option>");
                     }
+
                 }
 
+
+
                 dr.Close();
+
+
+
 
                 if (disponibles.Length > 0)
                 {
@@ -223,18 +377,24 @@ namespace sidiWeb.student
                         Text = "<h5 class='titulo-grupo'>Disponible</h5>"
                     });
 
+
                     phIdiomas.Controls.Add(new Literal
                     {
                         Text = disponibles.ToString()
                     });
                 }
 
+
+
+
                 if (enProceso.Length > 0)
                 {
                     phIdiomas.Controls.Add(new Literal
                     {
-                        Text = "<h5 class='titulo-grupo en-proceso'>En proceso</h5>"
+                        Text =
+                        "<h5 class='titulo-grupo en-proceso'>En proceso</h5>"
                     });
+
 
                     phIdiomas.Controls.Add(new Literal
                     {
@@ -242,7 +402,14 @@ namespace sidiWeb.student
                     });
                 }
 
-                bool yaMatriculado = YaEstaEnEsteCiclo(idAlumno, idIdioma, ciclo);
+
+
+
+                bool yaMatriculado =
+                    YaEstaEnEsteCiclo(idAlumno, idIdioma, ciclo);
+
+
+
 
                 if (opciones.Length > 0)
                 {
@@ -250,44 +417,61 @@ namespace sidiWeb.student
                     {
                         Text = $@"
 <div class='matricula-footer'>
-    <button type='button' class='btn-matricular'
-        onclick=""abrirFormulario(this)"">
+
+    <button type='button'
+            class='btn-matricular'
+            onclick=""abrirFormulario(this)"">
+
         Matricularme
+
     </button>
 
-    <select class='combo-horarios' style='display:none'>
+
+    <select class='combo-horarios'
+            style='display:none'>
+
         {opciones}
+
     </select>
+
+
 </div>"
                     });
                 }
+
                 else
                 {
+
                     if (yaMatriculado)
                     {
                         phIdiomas.Controls.Add(new Literal
                         {
-                            Text = @"<div class='alert alert-warning'>
-                    Ya estás matriculado en este ciclo.
-                </div>"
+                            Text =
+                            @"<div class='alert alert-warning'>
+                        Ya estás matriculado en este ciclo.
+                    </div>"
                         });
                     }
+
                     else if (!hayGruposVigentes)
                     {
                         phIdiomas.Controls.Add(new Literal
                         {
-                            Text = @"<div class='alert alert-info'>
-                    No hay grupos vigentes para este ciclo actualmente.
-                </div>"
+                            Text =
+                            @"<div class='alert alert-info'>
+                        No hay grupos vigentes para este ciclo actualmente.
+                    </div>"
                         });
                     }
+
                     else
                     {
                         phIdiomas.Controls.Add(new Literal
                         {
-                            Text = @"<div class='alert alert-info'>
-                    No hay horarios disponibles para matrícula en este momento.
-                </div>"
+                            Text =
+                            @"<div class='alert alert-info'>
+                        No hay horarios disponibles para matrícula en este momento.
+                    </div>"
                         });
                     }
                 }
@@ -869,9 +1053,70 @@ namespace sidiWeb.student
                 };
             }
         }
+
+        private EstadoReincorporacion CalcularEstadoReincorporacion(DateTime fechaFinal)
+        {
+            DateTime fechaActual = DateTime.Now;
+
+
+            int mesesInactivo =
+                ((fechaActual.Year - fechaFinal.Year) * 12)
+                + fechaActual.Month - fechaFinal.Month;
+
+
+            // Evita valores negativos por fechas futuras
+            if (mesesInactivo < 0)
+            {
+                mesesInactivo = 0;
+            }
+
+
+            EstadoReincorporacion estado = new EstadoReincorporacion
+            {
+                MesesInactivo = mesesInactivo
+            };
+
+
+            if (mesesInactivo >= 1 && mesesInactivo <= 4)
+            {
+                estado.RequiereReincorporacion = true;
+                estado.PerdioProgreso = false;
+
+                estado.Mensaje =
+                    "El alumno requiere reincorporación para continuar.";
+            }
+            else if (mesesInactivo >= 5)
+            {
+                estado.RequiereReincorporacion = false;
+                estado.PerdioProgreso = true;
+
+                estado.Mensaje =
+                    "El alumno perdió su progreso y debe iniciar nuevamente.";
+            }
+            else
+            {
+                estado.RequiereReincorporacion = false;
+                estado.PerdioProgreso = false;
+
+                estado.Mensaje =
+                    "El alumno puede continuar normalmente.";
+            }
+
+
+            return estado;
+        }
     }
 
+    public class EstadoReincorporacion
+    {
+        public bool RequiereReincorporacion { get; set; }
 
+        public bool PerdioProgreso { get; set; }
+
+        public int MesesInactivo { get; set; }
+
+        public string Mensaje { get; set; }
+    }
 
     public class GrupoInfo
     {

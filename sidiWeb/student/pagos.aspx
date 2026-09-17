@@ -94,7 +94,7 @@
         </asp:Label>
     </ItemTemplate>
 </asp:TemplateField>
-                            <asp:BoundField DataField="Razon" HeaderText="CONCEPTO" SortExpression="Razon" />
+                            <asp:BoundField DataField="Concepto" HeaderText="CONCEPTO" SortExpression="Concepto" />
                             <asp:BoundField DataField="Nivel" HeaderText="NIVEL" />
                             <asp:TemplateField HeaderText="MONTO" SortExpression="Monto">
                                 <ItemTemplate>
